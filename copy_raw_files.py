@@ -1,4 +1,5 @@
-"""Program copy_raw_files.py
+"""copy_raw_files.py written by Phil Wilmarth, OHSU, 2016-2017.
+
 Copies Thermo RAW files (and other files) selected by the
 user to a destination folder. A new filder is created if
 needed. Destination will typically be on an external drive.
@@ -6,7 +7,32 @@ File contents are checked to ensure that copies are intact,
 and copies are repeated (user settable limit) until file and
 copy match.
 
-written by Phil Wilmarth, OHSU, 2016.
+The MIT License (MIT)
+
+Copyright (c) 2017 Phillip A. Wilmarth and OHSU
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Direct questions to:
+Technology & Research Collaborations, Oregon Health & Science University,
+Ph: 503-494-8200, FAX: 503-494-4729, Email: techmgmt@ohsu.edu.
+
 updated for Python 3 -PW 20171211
 """
 # global imports
