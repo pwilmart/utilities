@@ -173,7 +173,10 @@ for index in internal_drives:
 # have user select/create destination folder
 print('External drive list:', external_drives)
 title_message = 'Select a top-level folder'
-default_loc = external_drives[0]
+try:
+    default_loc = external_drives[0]
+except IndexError:
+    default_loc = os.getcwd()
 destination_folder = get_folder(default_loc, title_message)
 if not destination_folder:
     sys.exit()
