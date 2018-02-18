@@ -1,7 +1,10 @@
 # utilities
 Some Python utility scripts for proteomics file management
 
-Collection of tools for some basic proteomics file management activities. 
+Collection of tools for some basic proteomics file management activities.
+
+## compare_directories.py
+Recursively compares two folders or drives. File contents can be compared for identity or just file names and attributes (faster). Provides information about higher-level differences. A text log file is created in the location with the script. Log information is appended to the log file.
 
 ## copy_raw_files.py
 Instrument RAW files can be large and can sometimes have errors when being copied. This script will copy files, check the original and the copy, and retry the copy until is matches the original (user set limit on number of retries). It can also check for and replace spaces in folder and filenames during the copying. There are a few flags to control program operation at the top of the script after the import statements. 
