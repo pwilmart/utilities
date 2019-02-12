@@ -77,12 +77,10 @@ def get_files(default_location, extension_list, title_string=""):
     filenames = filedialog.askopenfilenames(parent=root, initialdir=default_location,
                                             filetypes=extension_list, multiple=True,
                                             title=title_string)
-    print(filenames)
 
     # return fixed full filenames
     if NO_SPACES:
         filenames = [re.sub(' ', '_', f) for f in filenames]
-    print(filenames)
 
     return filenames
     # end
@@ -171,7 +169,7 @@ for index in internal_drives:
     external_drives.pop(index)  # remove 'A', 'C', 'D', 'E', 'F' drives from list
 
 # have user select/create destination folder
-print('External drive list:', external_drives)
+##print('External drive list:', external_drives)
 title_message = 'Select a top-level folder'
 try:
     default_loc = external_drives[0]
