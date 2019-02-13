@@ -11,7 +11,7 @@ Recursively compares two folders or drives. File contents can be compared for id
 ---
 
 ## copy_raw_files.py
-Instrument RAW files can be large and can sometimes have errors when being copied. This script will copy files, check the original and the copy, and retry the copy until is matches the original (user set limit on number of retries). It can also check for and replace spaces in folder and filenames during the copying. There are a few flags to control program operation at the top of the script after the import statements.
+Instrument RAW files can be large and can sometimes have errors when being copied. This script will copy files, check the original and the copy, and retry the copy until it matches the original (user set limit on number of retries). It can also check for and replace spaces in folder and filenames during the copying. There are a few flags to control program operation at the top of the script after the import statements.
 
 Work flow is:
 
