@@ -1,0 +1,20 @@
+# Project Archiving Manaegment File
+#   This text file is designed to be edited by Core staff to designate
+#   which project analyses are complete and can be archived. A utility
+#   script will look for these completed projects and other projects
+#   that have had 30 days or more of inactivity. There is also a
+#   separate list of projects that are still ongoing and that might 
+#   have more than 30 days since the last activity.
+#
+# use complete project folder names, blank lines are OK
+#
+#============================================
+# COMPLETED PROJECTS LIST (ready to archive)
+#============================================
+
+#====================================================
+# ONGOING PROJECTS LIST (these will NOT be archived)
+#====================================================
+EXP4321
+
+# End of file
