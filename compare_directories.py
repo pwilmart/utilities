@@ -12,8 +12,8 @@ import filecmp
 import tkinter
 from tkinter import filedialog
 
-LEVELS = 4              # how many subfolder levels for printing
-CHECK_CONTENTS = True   # checks actual contents of files
+LEVELS = 3              # how many subfolder levels for printing
+CHECK_CONTENTS = False   # checks actual contents of files
 VERBOSE = True          # if True, prints "no difference" folders
 
 def strip(s):

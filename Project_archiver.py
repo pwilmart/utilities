@@ -50,33 +50,43 @@ should keep a WARNINGS count for each project
 import sys
 import os
 import shutil
-import tkMessageBox
 import gzip
 import zipfile
 import time
 import glob
 import platform
-from Tkinter import *
+from tkinter import *
+from tkinter import filedialog
+from tkinter import ttk
+from tkinter import messagebox
 
 #==========   SETUP FLAGS    ===========
 # Flag designating when a project is expired (in days).
 EXPIRES = 30.0
-##EXPIRES = 0.0
+EXPIRES = 0.0
 
 # Move files to special folder or leave in place
-################################
-################################
 MOVE_FILES = False
 
 # Auto-compression Size Threshold
 SIZE_THRESHOLD = 5242880     # 5 MB
 ##SIZE_THRESHOLD = 3145728    # 3 MB
 
+######################################## CHANGE THIS BACK TO TRUE
 # Compress large files flag
-GZIP_LARGE_FILES = True
+GZIP_LARGE_FILES = False
+########################################     PW - 20190729
 
-# Do not compress file extension list
-DO_NOT_COMPRESS = ['.raw', '.wiff', '.scan', '.zip', '.gz', '.rar', '.sf3', '.sfd', '.srf', '.msf']
+# RAW - Thermo intrument files
+# WIFF, SCAN - Q-Star instrument files
+# ZIP, GZ, RAR - common compressed files
+# SF3, SFD, BAK - Scaffold files
+# SRF, MSF - Proteome Discoverer files
+# MGF, DAT - Mascot files
+# SQT, MS2 - Comet/PAW files
+
+# Do not compress file extension list:
+DO_NOT_COMPRESS = ['.raw', '.wiff', '.scan', '.zip', '.gz', '.rar', '.sf3', '.sfd', 'bak', '.srf', '.msf']
 
 # Compress file extension list
 COMPRESS = ['.mgf', '.ms2', '.sqt', '.dat']
@@ -154,7 +164,6 @@ class GUI:
         global MOVE_FILES
         global GZIP_LARGE_FILES
         if(len(self.right) > 0):
-            import ttk
             s = '\n'
             for r in self.right:
                 s += r + '\n'
@@ -165,7 +174,7 @@ class GUI:
             self.progresstext.pack()
             self.progressbar.update()
             
-            if tkMessageBox.askyesno(title = 'Preview', message = 'Ready to archive the following projects?' + s):
+            if messagebox.askyesno(title = 'Preview', message = 'Ready to archive the following projects?' + s):
                 success_list = process_projects(self.root_folder, self.right, self.fail_list, self.write)
                 if MOVE_FILES:
                     clean_project_lists(PATH_TO_PROJECT_LISTS, success_list, self.write)
@@ -353,10 +362,9 @@ def get_folder(default):
     """Puts up dialog box to browse to a folder -
     'default' is the default location.
     """
-    import Tkinter, tkFileDialog
-    root = Tkinter.Tk()
+    root = Tk()
     root.withdraw()
-    folder_path = tkFileDialog.askdirectory(parent=root,initialdir=default,\
+    folder_path = filedialog.askdirectory(parent=root,initialdir=default,\
                                        title='Please select the FOLDER for archive processing')
     return(folder_path)
 
@@ -378,7 +386,7 @@ def zip_one_folder(info, path_to_project, write):
     else:
         s = info.dta_path
     for obj in write:
-        print >>obj, '...Zipping DTA and OUT files in %s' % (s,)
+        print('...Zipping DTA and OUT files in %s' % (s,), file=obj)
     os.chdir(info.dta_path)
     folder = os.path.basename(info.dta_path)
     zip_name = os.path.join(info.dta_path, folder + '.zip')
@@ -390,10 +398,10 @@ def zip_one_folder(info, path_to_project, write):
         if os.path.isdir(item) or item[-4:] in (DO_NOT_COMPRESS + COMPRESS):
             if item == os.path.basename(zip_name):
                 for obj in write:
-                    print >>obj, '......WARNING:', zip_name[len(path_to_project):], 'was overwritten'
+                    print('......WARNING:', zip_name[len(path_to_project):], 'was overwritten', file=obj)
             else:
                 for obj in write:
-                    print >>obj, '......WARNING:', os.path.join(info.dta_path, item)[len(path_to_project):], 'not added to Zip archive'
+                    print('......WARNING:', os.path.join(info.dta_path, item)[len(path_to_project):], 'not added to Zip archive', file=obj)
         else:
             if item.endswith('.dta'):
                 dtas += 1
@@ -404,7 +412,7 @@ def zip_one_folder(info, path_to_project, write):
     # print warning if SEQUEST search was incomplete
     if outs < dtas:
         for obj in write:
-            print >>obj, '......WARNING: OUT files (%s) less than DTA files (%s)' % (outs, dtas)
+            print('......WARNING: OUT files (%s) less than DTA files (%s)' % (outs, dtas), file=obj)
     
     # skip empty folders
     if len(file_list) == 0:
@@ -413,7 +421,7 @@ def zip_one_folder(info, path_to_project, write):
 
     # print number of files to be zipped
     for obj in write:
-        print >>obj, '......%s contains %s DTA and %s OUT files' % (folder, dtas, outs)
+        print('......%s contains %s DTA and %s OUT files' % (folder, dtas, outs), file=obj)
     
     # add files to archive. This overwrites any existing archives.
     zip_file = zipfile.ZipFile(zip_name, 'w', zipfile.ZIP_DEFLATED, allowZip64=True)
@@ -422,7 +430,7 @@ def zip_one_folder(info, path_to_project, write):
             zip_file.write(files, os.path.basename(files))
         except:
             for obj in write:
-                print >>obj, '......WARNING: %s could not be added to archive' % (files,)
+                print('......WARNING: %s could not be added to archive' % (files,), file=obj)
     zip_file.close()
     info.zip_path = zip_name
 
@@ -433,7 +441,7 @@ def zip_one_folder(info, path_to_project, write):
         return False
     else:
         for obj in write:
-            print >>obj, '......%s is complete' % (folder + '.zip',)
+            print('......%s is complete' % (folder + '.zip',), file=obj)
         return True
     # end
 
@@ -528,10 +536,10 @@ def gzip_and_delete(path_to_project, size, write):
                     if gzip_file_inplace(the_file, write):
                         zipped_file_log.write(the_file + '\n')
                         for obj in write:
-                            print >>obj, "...GZipped and deleted: " + the_file[len(root_folder):]
+                            print('...GZipped and deleted: ' + the_file[len(root_folder):], file=obj)
                     else:
                         for obj in write:
-                            print >>obj, "......WARNING! File compression failed:", the_file[len(root_folder):]
+                            print('......WARNING! File compression failed: ', the_file[len(root_folder):], file=obj)
     if zipped_file_log:
         zipped_file_log.close()
 
@@ -561,7 +569,7 @@ def cleanup_dta_out_files(path_to_project, success_list, write):
                 params = os.path.join(path, params)
             except IndexError:
                 for obj in write:
-                    print >>obj, '......WARNING: no sequest.params file in:', path
+                    print('......WARNING: no sequest.params file in:', path, file=obj)
                 params = None
             new_info = DtaOutFolderInfo(path, len(files), params)
 
@@ -569,7 +577,7 @@ def cleanup_dta_out_files(path_to_project, success_list, write):
             key = os.path.dirname(path)
             if len(key) < len(path_to_project):
                 key = path_to_project  # make sure we stay inside the project folder
-            if dta_folder_dict.has_key(key):
+            if key in dta_folder_dict:
                 dta_folder_dict[key].append(new_info)
             else:
                 dta_folder_dict[key] = [new_info] # values are lists of DTA/OUT folder information objects
@@ -600,7 +608,7 @@ def cleanup_dta_out_files(path_to_project, success_list, write):
                 else:
                     success_list = success_list[:-1]
                     for obj in write:
-                        print >>obj, '......WARNING: cleaning up %s failed. Manual inspection required!' % (project_name,)
+                        print('......WARNING: cleaning up %s failed. Manual inspection required!' % (project_name,), file=obj)
             else:
                 delete_dtas_outs(info.dta_path, success_list, write)
 
@@ -623,13 +631,13 @@ class DtaOutFolderInfo:
     def _snoop(self):
         """Diognostic contents dump
         """
-        print 'dta_path:', self.dta_path
-        print 'dta_folder_name:', self.dta_folder_name
-        print 'container_path:', self.container_path
-        print 'container_folder_name:', self.container_folder_name
-        print 'file_count:', self.file_count
-        print 'params_path:', self.params_path
-        print 'zip_path:', self.zip_path
+        print('dta_path:', self.dta_path)
+        print('dta_folder_name:', self.dta_folder_name)
+        print('container_path:', self.container_path)
+        print('container_folder_name:', self.container_folder_name)
+        print('file_count:', self.file_count)
+        print('params_path:', self.params_path)
+        print('zip_path:', self.zip_path)
 
     # end class
 
@@ -649,7 +657,7 @@ def reconcile_zip_locations(info_list, path_to_project, write):
         # find the most frequent Zip location
         zip_frequency = {}
         for zip_path in zip_list:
-            if zip_frequency.has_key(os.path.dirname(zip_path)):
+            if os.path.dirname(zip_path) in zip_frequency:
                 zip_frequency[os.path.dirname(zip_path)] += 1
             else:
                 zip_frequency[os.path.dirname(zip_path)] = 1
@@ -679,7 +687,7 @@ def reconcile_zip_locations(info_list, path_to_project, write):
             x = time.localtime(time.time()) # get time stamp to append for new folder name
             zip_folder = '%s_%d%02d%02d' % (zip_folder, x.tm_year, x.tm_mon, x.tm_mday)
             for obj in write:
-                print >>obj, '......NOTE: creating new folder:', zip_folder
+                print('......NOTE: creating new folder:', zip_folder, file=obj)
             os.mkdir(zip_folder)
 
     # move any Zips not already in zip_folder
@@ -689,9 +697,9 @@ def reconcile_zip_locations(info_list, path_to_project, write):
                 os.rename(info.zip_path, os.path.join(zip_folder, os.path.basename(info.zip_path)))
             except WindowsError:
                 for obj in write:
-                    print >>obj, '......WARNING: problem moving archive (name conflict?)',
-                    print >>obj, '.........From:', info.zip_path
-                    print >>obj, '.........To:', os.path.join(zip_folder, os.path.basename(info.zip_path))
+                    print('......WARNING: problem moving archive (name conflict?)', file=obj)
+                    print('.........From:', info.zip_path, file=obj)
+                    print('.........To:', os.path.join(zip_folder, os.path.basename(info.zip_path)), file=obj)
         try:    # try adding a sequest.params file (from container folder)
             shutil.copy2(os.path.join(os.path.basename(info.dta_path), 'sequest.params'),
                          os.path.join(zip_folder, 'sequest.params'))
@@ -714,11 +722,11 @@ def check_archive(zip_file, info, path_to_project, write):
         z = zipfile.ZipFile(zip_file)
     else:
         for obj in write:
-            print >>obj, '......WARNING: %s is not a Zip file' % (zip_file[len(path_to_project):],)
+            print('......WARNING: %s is not a Zip file' % (zip_file[len(path_to_project):],), file=obj)
             return False
     if z.testzip():
         for obj in write:
-            print >>obj, '......WARNING: %s is corrupt' % (zip_file[len(path_to_project):],)
+            print('......WARNING: %s is corrupt' % (zip_file[len(path_to_project):],), file=obj)
             z.close()
             return False
         
@@ -726,14 +734,16 @@ def check_archive(zip_file, info, path_to_project, write):
     if info.params_path != None:
         try:
             archive_params = z.read(os.path.basename(info.params_path)).splitlines()    # end of line chars are a problem
+            archive_params = [x.rstrip().decode('ascii') for x in archive_params]
         except KeyError:
             archive_params = ''
         with open(info.params_path, 'r') as f_params:
-            original_params = f_params.read().splitlines() 
+            original_params = f_params.read().splitlines()
+            original_params = [x.rstrip() for x in original_params]
         if archive_params != original_params:
 ##            for obj in write:
-##                print >>obj, '......%s is NOT an archive of %s' % (zip_file[len(path_to_project):],
-##                                                                info.dta_path[len(path_to_project):])
+##                print('......%s is NOT an archive of %s' % (zip_file[len(path_to_project):],
+##                                                                info.dta_path[len(path_to_project):]), file=obj)
             z.close()
             return False
 
@@ -747,10 +757,10 @@ def check_archive(zip_file, info, path_to_project, write):
     z_tuples = [(x.filename, x.file_size, x.date_time[:3]) for x in z_infolist] # get file modification times (drop H,M,S)
 
     # get info about attributes of files in the folder
-##    print 'diagnostics:'
-##    print 'folder:', os.getcwd()
-##    print 'number of files:', len(os.listdir('.'))
-##    print 'info:'
+##    print('diagnostics:')
+##    print('folder:', os.getcwd())
+##    print('number of files:', len(os.listdir('.')))
+##    print('info:')
 ##    info._snoop()
     f_namelist = []
     for f in os.listdir(info.dta_path):
@@ -760,20 +770,20 @@ def check_archive(zip_file, info, path_to_project, write):
             f_namelist.append(f)   # add file to file_list
     f_sizelist = [os.stat(os.path.join(info.dta_path,x)).st_size for x in f_namelist]   # file sizes in folder
     f_modtime = [time.localtime(os.stat(os.path.join(info.dta_path,x)).st_mtime)[:3] for x in f_namelist] # just use Y,M,D for modification times
-    f_tuples = zip(f_namelist, f_sizelist, f_modtime)       # make tuples of info for files in folder
+    f_tuples = list(zip(f_namelist, f_sizelist, f_modtime))       # make tuples of info for files in folder
 
     # use set difference to test for identical attributes (empty set if identical)
     z_set = set(z_tuples)
     f_set = set(f_tuples)
     if z_set.symmetric_difference(f_set):
 ##        for obj in write:
-##            print >>obj, '......%s is NOT an archive of %s' % (zip_file[len(path_to_project):],
-##                                                            info.dta_path[len(path_to_project):])
+##            print('......%s is NOT an archive of %s' % (zip_file[len(path_to_project):],
+##                                                            info.dta_path[len(path_to_project):]), file=obj)
         z.close()
         return False
     else:
         for obj in write:
-            print >>obj, '......%s has an archive' % (info.dta_path[len(path_to_project):],)
+            print('......%s has an archive' % (info.dta_path[len(path_to_project):],), file=obj)
         z.close()
         return True
             
@@ -787,7 +797,7 @@ def delete_all_dtas_outs(dta_files, success_list, write, confirm=False):
     Billy Rathje, OHSU, 2013
     '''
     if confirm:
-        if not tkMessageBox.askyesno('Delete?', 'Delete dta files in ' + dta_files + '?'):
+        if not messagebox.askyesno('Delete?', 'Delete dta files in ' + dta_files + '?'):
             for obj in write:
                 print >>obj, '......WARNING: deleting DTA/OUT files cancelled for:', dta_files
                 success_list = success_list[:-1]
@@ -811,16 +821,16 @@ def delete_dtas_outs(dta_files, success_list, write, confirm=False):
     Billy Rathje, OHSU, 2013
     '''
     if confirm:
-        if not tkMessageBox.askyesno('Delete?', 'Delete dta files in ' + dta_files + '?'):
+        if not messagebox.askyesno('Delete?', 'Delete dta files in ' + dta_files + '?'):
             for obj in write:
-                print >>obj, '......WARNING: deleting DTA/OUT files cancelled for:', dta_files
+                print('......WARNING: deleting DTA/OUT files cancelled for:', dta_files, file=obj)
                 success_list = success_list[:-1]
             return
 
     g.progresstext.configure(text = "Deleting dtas/outs: " + os.path.basename(dta_files))
     g.progressbar.update()
     for obj in write:
-        print >>obj, '......deleting DTA/OUT files in %s' % (os.path.basename(dta_files),)
+        print('......deleting DTA/OUT files in %s' % (os.path.basename(dta_files),), file=obj)
     os.chdir(dta_files)
     for dta in glob.glob('*.dta'):
         os.remove(dta)
@@ -839,10 +849,10 @@ def move_finished_projects(root_folder, success_list, write, confirm=False):
         st = '\n'
         for x in sorted(set(success_list)):
             st += x + '\n'
-        if not tkMessageBox.askyesno('Ready?', 'Ready to move: ' + st + 'to ' + ARCHIVE_NAME + '?'):
+        if not messagebox.askyesno('Ready?', 'Ready to move: ' + st + 'to ' + ARCHIVE_NAME + '?'):
 ##    if raw_input('Ready to move: ' + str(set(success_list)) + ' to ' + ARCHIVE_NAME + '(Y/N)?') == 'N':
             for obj in write:
-                print >>obj, '......WARNING: Completed projects not moved to %s' % (ARCHIVE_NAME,)
+                print('......WARNING: Completed projects not moved to %s' % (ARCHIVE_NAME,), file=obj)
                 success_list = []
                 return
         
@@ -850,13 +860,13 @@ def move_finished_projects(root_folder, success_list, write, confirm=False):
     os.chdir(root_folder)
     if ARCHIVE_NAME not in os.listdir('.'):
         for obj in write:
-            print >>obj, '......WARNING: archive destination folder not found. New folder created.'
+            print('......WARNING: archive destination folder not found. New folder created.', file=obj)
         os.mkdir(os.path.join(root_folder, ARCHIVE_NAME))
 
     # move projects into ARCHIVE_NAME folder
     for project in set(success_list):
         for obj in write:
-            print >>obj, '...project moved:', os.path.join(root_folder, ARCHIVE_NAME, project)
+            print('...project moved:', os.path.join(root_folder, ARCHIVE_NAME, project), file=obj)
         shutil.move(os.path.join(root_folder, project), os.path.join(root_folder, ARCHIVE_NAME, project))
 
 def make_expired_list(root_folder, completed, ongoing, write):
@@ -881,18 +891,18 @@ def make_expired_list(root_folder, completed, ongoing, write):
     not_expired_list = []
     expired_list = []
     for obj in write:
-        print >>obj, '\nChecking project folder modification dates:'
+        print('\nChecking project folder modification dates:', file=obj)
     for project in project_list:
         if project in (completed + ongoing + [os.path.basename(ARCHIVE_NAME)]):
             continue
         if (now - os.stat(project).st_mtime) < time_limit:
             not_expired_list.append(project)
             for obj in write:
-                print >>obj, '...%s is not yet expired. Skipping archiving.' % project
+                print('...%s is not yet expired. Skipping archiving.' % project, file=obj)
         else:
             expired_list.append(project)
             for obj in write:
-                print >>obj, '...%s old enough to be considered for archiving.' % project
+                print('...%s old enough to be considered for archiving.' % project, file=obj)
 
     return expired_list, not_expired_list
     
@@ -913,10 +923,10 @@ def process_projects(root_folder, completed, ongoing, write):
 
     # echo list of projects to be processed to console and log file
     for obj in write:
-        print >>obj, '\nThe following projects will be processed:'
+        print('\nThe following projects will be processed:', file=obj)
     for project in project_list:
         for obj in write:
-            print >>obj, '...%s' % (project,)
+            print('...%s' % (project,), file=obj)
 
     # Walk top level project folders
     step = 100/len(project_list)
@@ -931,7 +941,7 @@ def process_projects(root_folder, completed, ongoing, write):
 
         # console and log file message
         for obj in write:
-            print >>obj, '\nProcessing: %s' % (project,)
+            print('\nProcessing: %s' % (project,), file=obj)
 
         # Progress bar
         g.progresstext.update()
@@ -950,12 +960,12 @@ def process_projects(root_folder, completed, ongoing, write):
 
     # Done
     for obj in write:
-        print >>obj, ''
+        print('', file=obj)
         if not MOVE_FILES:
-            print >>obj, 'WARNING: These projects are sill in original locations!'
+            print('WARNING: These projects are sill in original locations!', file=obj)
     for project in sorted(set(success_list)):
         for obj in write:
-            print >>obj, project, 'is ready to be archived'
+            print(project, 'is ready to be archived', file=obj)
 
     os.chdir(root_folder)
     return success_list
@@ -975,7 +985,7 @@ def parse_project_lists(path_to_project_lists, root_folder, write):
         return completed, ongoing
     with open(path_to_project_lists, 'r') as project_lists:
         for obj in write:
-            print>>obj, 'Reading: ' + path_to_project_lists
+            print('Reading: ' + path_to_project_lists, file=obj)
         IN_COMPLETED = False
         IN_ONGOING = False
         
@@ -1001,12 +1011,12 @@ def parse_project_lists(path_to_project_lists, root_folder, write):
                     ongoing.append(line)
 
         for obj in write:
-            print >>obj, '...completed projects:'
+            print('...completed projects:', file=obj)
             for proj in sorted(completed):
-                print >>obj, '......%s' % proj
-            print >>obj, '...ongoing projects:'
+                print('......%s' % proj, file=obj)
+            print('...ongoing projects:', file=obj)
             for proj in sorted(ongoing):
-                print >>obj, '......%s' % proj
+                print('......%s' % proj, file=obj)
 
         # Check that all project names exist at top level in root_folder
         to_remove = []  # cannot remove items from a list while it is being iterated on
@@ -1016,7 +1026,7 @@ def parse_project_lists(path_to_project_lists, root_folder, write):
             else:
                 to_remove.append(project)
                 for obj in write:
-                    print>>obj, '...WARNING: ' + project + ' could not be found.'
+                    print('...WARNING: ' + project + ' could not be found.', file=obj)
                     
         # remove any projects that could not be found                   
         for project in to_remove:
@@ -1034,10 +1044,10 @@ def parse_project_lists(path_to_project_lists, root_folder, write):
         for project in to_remove:
             completed.remove(project)
             for obj in write:
-                print >>obj, '...WARNING:', project, 'in completed and ongoing list. Removing from completed.' 
+                print('...WARNING:', project, 'in completed and ongoing list. Removing from completed.', file=obj)
                     
         for obj in write:
-            print>>obj, 'Done reading: ', path_to_project_lists
+            print('Done reading: ', path_to_project_lists, file=obj)
             
         return completed, ongoing
 
@@ -1051,11 +1061,11 @@ def clean_project_lists(path_to_project_lists, success_list, write):
     Billy Rathje, OHSU, 2013
     '''
     if os.path.isdir(path_to_project_lists):
-        print '...WARNING: project_lists file not valid'
+        print('...WARNING: project_lists file not valid')
         return
     with open(path_to_project_lists, 'r') as project_lists:
         for obj in write:
-            print>>obj, '\nCleaning: ' + path_to_project_lists
+            print('\nCleaning: ' + path_to_project_lists, file=obj)
         file_list = project_lists.readlines()
 
 #    success_list = [os.path.basename(x) for x in success_list]
@@ -1066,7 +1076,7 @@ def clean_project_lists(path_to_project_lists, success_list, write):
                 project_lists.write(line)
 
     for obj in write:
-        print>>obj, 'Done cleaning: ' + path_to_project_lists
+        print('Done cleaning: ' + path_to_project_lists, file=obj)
 
 #================================================================================
 # Project Archiver main program
@@ -1084,11 +1094,11 @@ with open(os.path.join(root_folder, 'project_archiver.log'), 'a') as log_obj:
     
     # message to user and timestamp
     for obj in write:
-        print >>obj, '\n======================================================='
-        print >>obj, ' Project_archiver.py, ver 1.0, OHSU 2013, Billy Rathje '
-        print >>obj, '======================================================='
-        print >>obj, '     Ran on:', str(time.ctime()), '\n'
-        print >>obj, 'Root folder:', root_folder
+        print('\n=======================================================', file=obj)
+        print(' Project_archiver.py, ver 1.0, OHSU 2013, Billy Rathje ', file=obj)
+        print('=======================================================', file=obj)
+        print('     Ran on:', str(time.ctime()), '\n', file=obj)
+        print('Root folder:', root_folder, file=obj)
 
     # populate user maintained completed and ongoing project lists
     completed, ongoing = parse_project_lists(PATH_TO_PROJECT_LISTS, root_folder, write)

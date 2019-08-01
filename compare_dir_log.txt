@@ -22483,3 +22483,3386 @@ Comparing: /Volumes/Samsung_256GB_scratch/BujoldTMT/results_files
        To: /Volumes/PW_Black_4TB/BujoldTMT/paws_files/results_files 
 
 results_files: -OK-
+
+
+=================================================================
+  compare_directories.py, v1.4, Phil Wilmarth, OHSU, 2012, 2017  
+=================================================================
+   Ran on: Tue Jul 30 10:24:16 2019
+
+File attributes only will be checked.
+Comparing: /Volumes/PW_Black_4TB
+       To: /Volumes/PW_Orange_4TB 
+
+
+--> /Volumes/PW_Black_4TB /Volumes/PW_Orange_4TB
+   right_only:
+      KUMA-550_combined
+      MaxQuant_1.5.7.4.zip
+      MaxQuant_1.6.1.0.zip
+      WD_orange_pre-installed
+
+...data: -OK-
+......FERR-271: -OK-
+.........TMT_Exp1: -OK-
+.........TMT_Exp2: -OK-
+......KUR1502: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......Lens_TMT_020316: -OK-
+.........msn_files: -OK-
+.........PD2.1_temp: -OK-
+.........raw_files: -OK-
+.........UniProt_2017.09: -OK-
+......Lens_TMT_022015: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+......MORG-75_TMT_reporter_ions: -OK-
+.........compare: -OK-
+.........exp1: -OK-
+.........exp2: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........results_files: -OK-
+.........UniProt_2017.09: -OK-
+......OST1655: -OK-
+.........filtered_files: -OK-
+.........ms2_files: -OK-
+.........raw: -OK-
+.........results_files: -OK-
+......PAMI-176: -OK-
+.........Normalization: -OK-
+.........RAW: -OK-
+......PAMI-194: -OK-
+.........Adipose: -OK-
+.........Normalization: -OK-
+......PAMI-260: -OK-
+.........Macaca_mulatta.MMUL_1.pep.all_fixed: -OK-
+.........Macaca_mulatta.Mmul_8.0.1.pep.all_fixed: -OK-
+.........Macaca_mulatta_UP000006718: -OK-
+.........Macac_mulatta_RefSeq_20161117: -OK-
+.........MacaM_v7.8_PROTEINS_fixed: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........Rhesus_PROTEINS_complete_7_19_16_fixed: -OK-
+.........Rhesus_Prot_curated_10_25_2016_fixed: -OK-
+......PAMI-283: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+......reporter_ions: -OK-
+......Show-Ling: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+...PAMI-283: -OK-
+......7aa_2pep_heights_PAW: -OK-
+.........filtered_files: -OK-
+.........results_files: -OK-
+......all_converted_raw: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......PAMI-283_A: -OK-
+.........1pep_7aa_heights_export: -OK-
+.........2pep_7aa_heights_export: -OK-
+.........2pep_7aa_narrow_tolerance_export: -OK-
+.........2pep_7aa_signaltonoise_export: -OK-
+.........2pep_7aa_testing: -OK-
+......PAMI-283_B: -OK-
+.........1pep_7aa_heights_export: -OK-
+.........2pep_7aa_heights_export: -OK-
+.........2pep_7aa_narrow_tolerance_export: -OK-
+.........2pep_7aa_signaltonoise_export: -OK-
+......PAMI-283_C: -OK-
+.........1pep_7aa_heights_export: -OK-
+.........2pep_7aa_heights_export: -OK-
+.........2pep_7aa_narrow_tolerance_export: -OK-
+.........2pep_7aa_signaltonoise_export: -OK-
+......PAMI-283_D: -OK-
+.........1pep_7aa_heights_export: -OK-
+.........2pep_7aa_heights_export: -OK-
+.........2pep_7aa_narrow_tolerance_export: -OK-
+.........2pep_7aa_signaltonoise_export: -OK-
+......PAW_narrow: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+......PAW_wide: -OK-
+.........filtered_files_no_mass: -OK-
+.........filtered_files_save: -OK-
+.........filtered_files_save - Copy: -OK-
+.........msn_files: -OK-
+.........msn_files_copy: -OK-
+.........results_files: -OK-
+......raw_A: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_24pctACN_25cm_120min_20161027_OT: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_26pctACN_25cm_120min_20161027_OT: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_28pctACN_25cm_120min_20161027_OT: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_30pctACN_25cm_120min_20161027_OT: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_40pctACN_25cm_120min_20161027_OT: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_90pctACN_25cm_120min_20161027_OT: -OK-
+.........combined: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_14pctACN_25cm_120min_20161027_OT: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_20pctACN_25cm_120min_20161027_OT: -OK-
+.........PAMI-283_GMCSF_A_TMT_40ug_22pctACN_25cm_120min_20161027_OT: -OK-
+......raw_B: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_24pctACN_25cm_120min_20161028_OT: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_26pctACN_25cm_120min_20161028_OT: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_28pctACN_25cm_120min_20161028_OT: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_30pctACN_25cm_120min_20161028_OT: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_40pctACN_25cm_120min_20161028_OT: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_90pctACN_25cm_120min_20161028_OT: -OK-
+.........combined: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_14pctACN_25cm_120min_20161028_OT: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_20pctACN_25cm_120min_20161028_OT: -OK-
+.........PAMI-283_GMCSF_B_TMT_40ug_22pctACN_25cm_120min_20161028_OT: -OK-
+......raw_C: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_24pctACN_25cm_120min_20161031_OT: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_26pctACN_25cm_120min_20161031_OT: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_28pctACN_25cm_120min_20161031_OT: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_30pctACN_25cm_120min_20161031_OT: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_40pctACN_25cm_120min_20161031_OT: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_90pctACN_25cm_120min_20161031_OT: -OK-
+.........combined: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_14pctACN_25cm_120min_20161031_OT: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_20pctACN_25cm_120min_20161031_OT: -OK-
+.........PAMI-283_GMCSF_C_TMT_40ug_22pctACN_25cm_120min_20161031_OT: -OK-
+......raw_D: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_30pctACN_25cm_120min_20161101_OT: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_40pctACN_25cm_120min_20161101_OT: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_90pctACN_25cm_120min_20161101_OT: -OK-
+.........combined: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_14pctACN_25cm_120min_20161101_OT: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_20pctACN_25cm_120min_20161101_OT: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_22pctACN_25cm_120min_20161101_OT: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_24pctACN_25cm_120min_20161101_OT: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_26pctACN_25cm_120min_20161101_OT: -OK-
+.........PAMI-283_GMCSF_D_TMT_40ug_28pctACN_25cm_120min_20161101_OT: -OK-
+......results_files: -OK-
+...databases: -OK-
+......chick: -OK-
+..........ipynb_checkpoints: -OK-
+......monkey: -OK-
+..........ipynb_checkpoints: -OK-
+.........originals: -OK-
+...DAVI-429: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......PRIDE: -OK-
+.........OTHER: -OK-
+.........RAW: -OK-
+.........SEARCH: -OK-
+......raw_files: -OK-
+.........DAVI-429_whole_26%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_28%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_30%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_40%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_90%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_26%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_28%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_30%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_40%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_90%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_14%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_22%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_24%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_26%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_28%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_30%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_40%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_17%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_20%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_22%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_90%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_14%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_17%ACN_20171016_OT: -OK-
+.........DAVI-429_whole_24%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_20%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_22%ACN_20171016_OT: -OK-
+.........DAVI-429_fibers_24%ACN_20171016_OT: -OK-
+.........combined: -OK-
+.........DAVI-429_epithelium_14%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_17%ACN_20171016_OT: -OK-
+.........DAVI-429_epithelium_20%ACN_20171016_OT: -OK-
+......results_files: -OK-
+......special_betaB2_search: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........results_files: -OK-
+...debug: -OK-
+......QE_MS2: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+......SPS_MS3: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+...Dmitri_2017: -OK-
+......2017_UniProt: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........__pycache__: -OK-
+......predicted_HLA: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+......RAW: -OK-
+...for_Kyra: -OK-
+...found.000: -OK-
+......dir0000.chk: -OK-
+...HOWA-655: -OK-
+.......Rproj.user: -OK-
+.........395D1027: -OK-
+.........shared: -OK-
+......txt: -OK-
+
+--> /Volumes/PW_Black_4TB/KUMA-550 /Volumes/PW_Orange_4TB/KUMA-550
+   right_only:
+      Fusion
+      QE
+
+......Fusion_normalization: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_Normalization: -OK-
+.........results_files: -OK-
+......QE-1_normalization: -OK-
+.........Normalization_1: -OK-
+.........Normalization_2: -OK-
+......QE-2: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+...KUMA-550_Fusion_PD: -OK-
+......filtered_files: -OK-
+......first_pass: -OK-
+......results_files: -OK-
+..........ipynb_checkpoints: -OK-
+...KUMA-625: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+.........ThresholdFigures_bad: -OK-
+......msn_files: -OK-
+......raw_files: -OK-
+
+--> /Volumes/PW_Black_4TB/KUMA-625/results_files /Volumes/PW_Orange_4TB/KUMA-625/results_files
+   right_only:
+      Control-HFE_ratios.xlsx
+      KUMA-625_TMT_Fusion2_check.html
+      KUMA-625_TMT_Fusion2_check.ipynb
+
+.........old_versions: -OK-
+..........ipynb_checkpoints: -OK-
+......TMTExp1: -OK-
+.........2DRPRP: -OK-
+.........Normalization: -OK-
+.........ProteinID+labelingcheckw131C: -OK-
+......TMTExp2: -OK-
+.........2DRPRP: -OK-
+.........Normalization: -OK-
+.........ProteinID+labelingcheckw131C: -OK-
+...KUR1502: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......MQ_results: -OK-
+..........ipynb_checkpoints: -OK-
+......msn_files: -OK-
+......raw_files: -OK-
+.........KUR1502_10_OT: -OK-
+.........KUR1502_11_OT: -OK-
+.........KUR1502_12_OT: -OK-
+.........KUR1502_13_OT: -OK-
+.........KUR1502_14_OT: -OK-
+.........KUR1502_15_OT: -OK-
+.........combined: -OK-
+.........KUR1502_02_OT: -OK-
+.........KUR1502_03_OT: -OK-
+.........KUR1502_04_OT: -OK-
+.........KUR1502_16_OT: -OK-
+.........KUR1502_17_OT: -OK-
+.........KUR1502_18_OT: -OK-
+.........KUR1502_05_OT: -OK-
+.........KUR1502_06_OT: -OK-
+.........KUR1502_07_OT: -OK-
+.........KUR1502_08_OT: -OK-
+.........KUR1502_09_OT: -OK-
+.........KUR1502_01_OT: -OK-
+......results_files: -OK-
+..........ipynb_checkpoints: -OK-
+.........20190411_notebooks: -OK-
+...Kurre-2019: -OK-
+......KUR-61: -OK-
+.........KUR-61_20160208: -OK-
+......KUR-XX: -OK-
+......KUR1502_test: -OK-
+.........ms2_files_20150108: -OK-
+.........ms2_files_original: -OK-
+.........raw_files: -OK-
+......KUR1594: -OK-
+.........2ND_MUDPIT: -OK-
+.........NORMALIZATION: -OK-
+.........RAW: -OK-
+......KUR1594_2nd_MUDPIT: -OK-
+.........quant_analysis_PW: -OK-
+......PRIDE: -OK-
+.........OTHER: -OK-
+.........QUANT: -OK-
+.........RAW: -OK-
+.........SEARCH: -OK-
+...LACH-491: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......raw_files: -OK-
+......results_files: -OK-
+..........ipynb_checkpoints: -OK-
+...LACH-678: -OK-
+.......ipynb_checkpoints: -OK-
+...LACH-714: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......raw_files: -OK-
+
+--> /Volumes/PW_Black_4TB/LACH-714/results_files /Volumes/PW_Orange_4TB/LACH-714/results_files
+   right_only: protein_companion_9.txt
+
+..........ipynb_checkpoints: -OK-
+...LIU-691: -OK-
+......2DRPRP: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......Normalization: -OK-
+......results_files: -OK-
+..........ipynb_checkpoints: -OK-
+.........without-albumin: -OK-
+...LIU-734: -OK-
+......2DRPRP: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+.........tryptic: -OK-
+......Normalization: -OK-
+.........raw_files: -OK-
+...MAN1353_dilutions: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......PD_2.1: -OK-
+.........intensities: -OK-
+.........signal2noise: -OK-
+......raw_files: -OK-
+.........MAN13532_TMT_9_20140216_OT: -OK-
+.........MAN13532_TMT_13_20140216_OT: -OK-
+.........MAN13532_TMT_14_20140216_OT: -OK-
+.........MAN13532_TMT_15_20140216_OT: -OK-
+.........MAN13532_TMT_16_20140216_OT: -OK-
+.........MAN13532_TMT_17_20140216_OT: -OK-
+.........combined: -OK-
+.........MAN13532_TMT_10_20140216_OT: -OK-
+.........MAN13532_TMT_11_20140216_OT: -OK-
+.........MAN13532_TMT_12_20140216_OT: -OK-
+.........MAN13532_TMT_1_20140216_OT: -OK-
+.........MAN13532_TMT_2_20140216_OT: -OK-
+.........MAN13532_TMT_3_20140216_OT: -OK-
+.........MAN13532_TMT_4_20140216_OT: -OK-
+.........MAN13532_TMT_5_20140216_OT: -OK-
+.........MAN13532_TMT_6_20140216_OT: -OK-
+.........MAN13532_TMT_7_20140216_OT: -OK-
+.........MAN13532_TMT_8_20140216_OT: -OK-
+......results_files: -OK-
+...MaxQuant_1.5.7.4: -OK-
+......MaxQuant: -OK-
+.........bin: -OK-
+...MCBR-431: -OK-
+......2DRPRP: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......Normalization: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+.........variable_mods: -OK-
+
+--> /Volumes/PW_Black_4TB/MORG-339 /Volumes/PW_Orange_4TB/MORG-339
+   right_only:
+      MORG-339_phospho.mzid
+      gzipped_files.log
+      notebook_results
+      raw_files
+
+......G-Zips: -OK-
+......mgf_files: -OK-
+
+--> /Volumes/PW_Black_4TB/MORG-339/OTHER /Volumes/PW_Orange_4TB/MORG-339/OTHER
+   right_only: RoadMap.xlsx
+
+
+--> /Volumes/PW_Black_4TB/MORG-339/QUANT /Volumes/PW_Orange_4TB/MORG-339/QUANT
+   right_only: plots.zip
+
+..........ipynb_checkpoints: -OK-
+.........plots: -OK-
+......RAW: -OK-
+......SEARCH: -OK-
+......statistical_testing: -OK-
+..........ipynb_checkpoints: -OK-
+...MORG-549: -OK-
+......Exp1_Exp2: -OK-
+.........bad_three: -OK-
+.........filtered_files: -OK-
+.........good_three: -OK-
+.........msn_files: -OK-
+.........results_files: -OK-
+......Normalization: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......TMTExp1: -OK-
+.........2DRPRP: -OK-
+.........Normalization: -OK-
+......TMTExp2: -OK-
+.........2DRPRP: -OK-
+.........Normalization: -OK-
+...MORG-75: -OK-
+......MORG-75_combined: -OK-
+.........filtered_files: -OK-
+.........results_files: -OK-
+......MORG-75_compaRe: -OK-
+..........ipynb_checkpoints: -OK-
+..........Rproj.user: -OK-
+
+--> /Volumes/PW_Black_4TB/MORG-75/MORG-75_Fusion /Volumes/PW_Orange_4TB/MORG-75/MORG-75_Fusion
+   right_only:
+      gzipped_files.log
+      results_files
+
+.........Exp1: -OK-
+.........Exp2: -OK-
+
+--> /Volumes/PW_Black_4TB/MORG-75/MORG-75_Fusion/filtered_files /Volumes/PW_Orange_4TB/MORG-75/MORG-75_Fusion/filtered_files
+   right_only:
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_14pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_14pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_17pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_17pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_20pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_20pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_21pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_21pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_22pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_22pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_23pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_23pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_24pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_24pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_25pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_25pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_26pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_26pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_27pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_27pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_28pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_28pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_29pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_29pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_30pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_30pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_35pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_35pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_40pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_40pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_50pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_50pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_90pctACN_25cm_120min_20150818_OT_filtered.sqt
+      MORG-75_Exp1_Humanvestibulitis_TMT_39pt6ug_90pctACN_25cm_120min_20150818_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_14pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_14pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_17pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_17pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_20pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_20pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_21pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_21pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_22pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_22pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_23pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_23pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_24pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_24pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_25pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_25pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_26pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_26pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_27pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_27pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_28pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_28pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_29pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_29pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_30pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_30pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_35pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_35pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_40pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_40pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_50pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_50pctACN_25cm_120min_20150821_OT_filtered.txt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_90pctACN_25cm_120min_20150821_OT_filtered.sqt
+      MORG-75_Exp2_Humanvestibulitis_TMT_40ug_90pctACN_25cm_120min_20150821_OT_filtered.txt
+      comet (2).params
+      sequest (2).params
+
+
+--> /Volumes/PW_Black_4TB/MORG-75/MORG-75_Fusion/filtered_files/ThresholdFigures /Volumes/PW_Orange_4TB/MORG-75/MORG-75_Fusion/filtered_files/ThresholdFigures
+   right_only:
+      Mass_Figure_dm=0_z=2 (2).pdf
+      Mass_Figure_dm=0_z=3 (2).pdf
+      Mass_Figure_dm=0_z=4 (2).pdf
+      Mass_Figure_dm=1_z=2 (2).pdf
+      Mass_Figure_dm=1_z=3 (2).pdf
+      Mass_Figure_dm=1_z=4 (2).pdf
+      Mass_Figure_dm=2_z=2 (2).pdf
+      Mass_Figure_dm=2_z=3 (2).pdf
+      Mass_Figure_dm=2_z=4 (2).pdf
+      Score_Figure_dm=0 Da_z=2_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=2_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=2_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=2_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=3_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=3_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=3_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=3_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=4_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=4_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=4_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=4_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=2_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=2_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=2_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=2_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=3_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=3_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=3_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=3_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=4_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=4_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=4_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=4_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=2_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=2_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=2_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=2_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=3_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=3_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=3_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=3_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=4_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=4_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=4_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=4_ntt=2_mod=Unmodified (2).pdf
+
+.........msn_files: -OK-
+.........raw_files: -OK-
+
+--> /Volumes/PW_Black_4TB/MORG-75/MORG-75_QE /Volumes/PW_Orange_4TB/MORG-75/MORG-75_QE
+   right_only: results_files
+
+
+--> /Volumes/PW_Black_4TB/MORG-75/MORG-75_QE/filtered_files /Volumes/PW_Orange_4TB/MORG-75/MORG-75_QE/filtered_files
+   right_only:
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_14pctACN_20170509_QE_filtered.ms2
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_14pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_14pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_17pctACN_20170509_QE_filtered.ms2
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_17pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_17pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_20pctACN_20170509_QE_filtered.ms2
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_20pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_20pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_20pctACN_Reinject_20170509_QE_filtered.ms2
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_20pctACN_Reinject_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_20pctACN_Reinject_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_21pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_21pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_22pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_22pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_23pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_23pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_24pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_24pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_25pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_25pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_26pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_26pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_27pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_27pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_28pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_28pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_29pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_29pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_30pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_30pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_35pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_35pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_40pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_40pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_50pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_50pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_90pctACN_20170509_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp1_39pt8ug_RPRP_25cm_90pctACN_20170509_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_14pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_14pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_17pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_17pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_20pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_20pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_21pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_21pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_22pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_22pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_23pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_23pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_24pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_24pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_25pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_25pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_26pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_26pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_27pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_27pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_28pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_28pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_29pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_29pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_30pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_30pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_40pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_40pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_50pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_50pctACN_20170505_QE_filtered.txt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_90pctACN_20170505_QE_filtered.sqt
+      MORG-75_Humanvestibulitis_TMTExp2_40ug_RPRP_25cm_90pctACN_20170505_QE_filtered.txt
+      comet (2).params
+      sequest (2).params
+
+
+--> /Volumes/PW_Black_4TB/MORG-75/MORG-75_QE/filtered_files/ThresholdFigures /Volumes/PW_Orange_4TB/MORG-75/MORG-75_QE/filtered_files/ThresholdFigures
+   right_only:
+      Mass_Figure_dm=0_z=2 (2).pdf
+      Mass_Figure_dm=0_z=3 (2).pdf
+      Mass_Figure_dm=0_z=4 (2).pdf
+      Mass_Figure_dm=1_z=2 (2).pdf
+      Mass_Figure_dm=1_z=3 (2).pdf
+      Mass_Figure_dm=1_z=4 (2).pdf
+      Mass_Figure_dm=2_z=2 (2).pdf
+      Mass_Figure_dm=2_z=3 (2).pdf
+      Mass_Figure_dm=2_z=4 (2).pdf
+      Score_Figure_dm=0 Da_z=2_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=2_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=2_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=2_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=3_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=3_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=3_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=3_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=4_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=4_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=0 Da_z=4_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=0 Da_z=4_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=2_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=2_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=2_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=2_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=3_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=3_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=3_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=3_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=4_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=4_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=1 Da_z=4_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=1 Da_z=4_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=2_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=2_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=2_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=2_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=3_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=3_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=3_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=3_ntt=2_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=4_ntt=1_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=4_ntt=1_mod=Unmodified (2).pdf
+      Score_Figure_dm=out_z=4_ntt=2_mod=M+15.9949 (2).pdf
+      Score_Figure_dm=out_z=4_ntt=2_mod=Unmodified (2).pdf
+
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........TMTExp1: -OK-
+.........TMTExp2: -OK-
+......MORG-75_QE_unknown: -OK-
+...Nat-Comm-2019: -OK-
+......SetA: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+......SetB: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+......SetC: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.......ipynb_checkpoints: -OK-
+......filtered_files_1PC-FDR: -OK-
+......results_files_2-peptides: -OK-
+..........ipynb_checkpoints: -OK-
+......results_files_3-peptides: -OK-
+...Neil_Adhikari: -OK-
+......PI171676a: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......PI253468: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......PI491154: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......ShiningStar: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......combined: -OK-
+.........filtered_files: -OK-
+.........results_files: -OK-
+..........ipynb_checkpoints: -OK-
+......databases: -OK-
+......Early_Bird: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......Eruption: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+.........results_files_first: -OK-
+......Laura: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......Mayfair: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......Morgana: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......Neil_6_results: -OK-
+......Parris_Island: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+
+--> /Volumes/PW_Black_4TB/$RECYCLE.BIN /Volumes/PW_Orange_4TB/$RECYCLE.BIN
+   right_only: S-1-5-21-3278937622-2945649715-3856561088-1000
+
+......S-1-5-21-1821506932-3693351400-3348585851-1013: -OK-
+......S-1-5-21-1971483154-2328440329-4011715254-1000: -OK-
+......S-1-5-21-3531441329-1293295723-4135814267-1001: -OK-
+
+--> /Volumes/PW_Black_4TB/$RECYCLE.BIN/S-1-5-21-784705773-1003131935-610973689-1000 /Volumes/PW_Orange_4TB/$RECYCLE.BIN/S-1-5-21-784705773-1003131935-610973689-1000
+   right_only:
+      $I0FGSEX.txt
+      $I2V9X56.000
+      $I372Y8X.txt
+      $I3GNJID.txt
+      $I3IZE3H.raw
+      $I5GD8DT.txt
+      $I5YNSWU.ms2
+      $I7BIM0X.txt
+      $I7BQP89.txt
+      $I7FYOXJ.json
+      $I852PFQ.txt
+      $I87IYPS.txt
+      $I8LSSWD.txt
+      $I8WRRG4.txt
+      $I95UF9U.raw
+      $I9E4RMK.txt
+      $IA9NNL4.txt
+      $IC0JUUY.txt
+      $IC5KT5T.txt
+      $ICC3AFS.txt
+      $ICKICWK.txt
+      $IDW0O1G.txt
+      $IF1Y0XE.txt
+      $IFASOIZ.raw
+      $IFHD1W0.txt
+      $IGDXMW3.txt
+      $IH6LXQP.raw
+      $IHFY9HG.txt
+      $IHNM02D.txt
+      $II8IWZT.ms2
+      $IIYX1I4.txt
+      $IKOMMYF.ms2
+      $IMG9VSV.txt
+      $ING4Q87.txt
+      $INQM34N.txt
+      $IO8G22Z.txt
+      $IP5PDAH.txt
+      $IPA8KTF.txt
+      $IQ9BQZC.txt
+      $IQP7Z2C.txt
+      $IQRXD4Q.txt
+      $IR32R85.txt
+      $IRSSURY.txt
+      $ISIZHHE.txt
+      $ISQQ7QW.txt
+      $IU6PRS7.txt
+      $IUUD3YP.txt
+      $IVDXI72.txt
+      $IVMVIU3
+      $IVPNIXF.txt
+      $IVYODVC.txt
+      $IW0OIHH.txt
+      $IWZ6HSE.txt
+      $IX4XNIX.txt
+      $IXNF7G0.txt
+      $IYCE9WF.txt
+      $IZAM6EU.txt
+      $IZQDP5R.txt
+      $IZX9SCK.raw
+      $R0FGSEX.txt
+      $R2V9X56.000
+      $R372Y8X.txt
+      $R3GNJID.txt
+      $R3IZE3H.raw
+      $R5GD8DT.txt
+      $R5YNSWU.ms2
+      $R7BIM0X.txt
+      $R7BQP89.txt
+      $R7FYOXJ.json
+      $R852PFQ.txt
+      $R87IYPS.txt
+      $R8LSSWD.txt
+      $R8WRRG4.txt
+      $R95UF9U.raw
+      $R9E4RMK.txt
+      $RA9NNL4.txt
+      $RC0JUUY.txt
+      $RC5KT5T.txt
+      $RCC3AFS.txt
+      $RCKICWK.txt
+      $RDW0O1G.txt
+      $RF1Y0XE.txt
+      $RFASOIZ.raw
+      $RFHD1W0.txt
+      $RGDXMW3.txt
+      $RH6LXQP.raw
+      $RHFY9HG.txt
+      $RHNM02D.txt
+      $RI8IWZT.ms2
+      $RIYX1I4.txt
+      $RKOMMYF.ms2
+      $RMG9VSV.txt
+      $RNG4Q87.txt
+      $RNQM34N.txt
+      $RO8G22Z.txt
+      $RP5PDAH.txt
+      $RPA8KTF.txt
+      $RQ9BQZC.txt
+      $RQP7Z2C.txt
+      $RQRXD4Q.txt
+      $RR32R85.txt
+      $RRSSURY.txt
+      $RSIZHHE.txt
+      $RSQQ7QW.txt
+      $RU6PRS7.txt
+      $RUUD3YP.txt
+      $RVDXI72.txt
+      $RVMVIU3
+      $RVPNIXF.txt
+      $RVYODVC.txt
+      $RW0OIHH.txt
+      $RWZ6HSE.txt
+      $RX4XNIX.txt
+      $RXNF7G0.txt
+      $RYCE9WF.txt
+      $RZAM6EU.txt
+      $RZQDP5R.txt
+      $RZX9SCK.raw
+
+
+--> /Volumes/PW_Black_4TB/.fseventsd /Volumes/PW_Orange_4TB/.fseventsd
+   diff_files: fseventsd-uuid
+
+...ABRF_2015: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......R-scripts: -OK-
+......raw_files: -OK-
+......results_files: -OK-
+..........ipynb_checkpoints: -OK-
+......search: -OK-
+...ALK1589: -OK-
+......5pc_FDR: -OK-
+.........filtered_files: -OK-
+.........results_files: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......Manuscript: -OK-
+......msn_files: -OK-
+......original_analysis: -OK-
+.........dta_files: -OK-
+.........filtered_SQT_files: -OK-
+.........results_files: -OK-
+.........SQT_files: -OK-
+.........zip_files: -OK-
+......PRIDE: -OK-
+.........OTHER: -OK-
+.........PEAKS: -OK-
+.........RAW: -OK-
+.........RESULTS: -OK-
+.........SEARCH: -OK-
+......RAW: -OK-
+..........Rproj.user: -OK-
+......results_files: -OK-
+...ASLA-359: -OK-
+...ASLA-515: -OK-
+......Analysis: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......raw_files: -OK-
+.........ASLA-515_humanplatelet_all_27%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_28%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_22%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_45%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_23%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_50%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_14%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_17%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_20%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_21%ACN_20180515_OT: -OK-
+.........combined_first: -OK-
+.........combined_second: -OK-
+.........ASLA-515_humanplatelet_all_24%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_25%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_26%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_29%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_30%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_35%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_40%ACN_20180515_OT: -OK-
+.........ASLA-515_humanplatelet_all_90%ACN_20180515_OT: -OK-
+......results_files: -OK-
+
+--> /Volumes/PW_Black_4TB/ASLA-603 /Volumes/PW_Orange_4TB/ASLA-603
+   right_only:
+      add_iBAQ.ipynb
+      filtered_files
+      msn_files
+      raw_files
+      results_files
+
+.......ipynb_checkpoints: -OK-
+......first_try: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......second_try: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+
+--> /Volumes/PW_Black_4TB/ASLA-626 /Volumes/PW_Orange_4TB/ASLA-626
+   right_only: all_pep
+
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......raw_files: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_22%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_23%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_24%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_25%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_26%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_27%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_28%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_29%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_30%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_35%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_14%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_17%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_40%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_45%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_50%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_90%ACN_20181126_OT: -OK-
+.........combined: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_20%ACN_20181126_OT: -OK-
+.........ASLA-626_humanplatelet_allpep_TMT_21%ACN_20181126_OT: -OK-
+
+--> /Volumes/PW_Black_4TB/ASLA-626/results_files /Volumes/PW_Orange_4TB/ASLA-626/results_files
+   right_only:
+      ASLA-626_ASLA_humanplatelet_allpep_peptide_results_8.txt
+      ASLA-626_allpep_grouped_peptide_summary_TMT_8.txt
+      ASLA-626_allpep_grouped_protein_summary_TMT_8.txt
+
+......TMT_data: -OK-
+
+--> /Volumes/PW_Black_4TB/Aslan_platelets /Volumes/PW_Orange_4TB/Aslan_platelets
+   right_only:
+      ASLA-603_first-data.html
+      ASLA-603_redo.html
+      ASLA-626.html
+      MQ
+      MQ_first-try
+      MQ_second-try
+
+.......ipynb_checkpoints: -OK-
+......correlations: -OK-
+..........Rproj.user: -OK-
+
+--> /Volumes/PW_Black_4TB/Aslan_platelets/filtered_files /Volumes/PW_Orange_4TB/Aslan_platelets/filtered_files
+   right_only:
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_14%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_14%ACN_Rerun_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_17%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_20%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_21%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_22%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_23%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_24%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_25%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_26%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_27%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_28%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_29%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_30%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_35%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_40%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_45%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_50%ACN_20181003_OT_filtered.txt
+      ASLA-603_humanplatelet_allpep_TMT_50pt3ug_25cm_120min_90%ACN_20181003_OT_filtered.txt
+
+......MQ_first-603: -OK-
+......MQ_second-603: -OK-
+
+--> /Volumes/PW_Black_4TB/Aslan_platelets/raw_files /Volumes/PW_Orange_4TB/Aslan_platelets/raw_files
+   right_only:
+      ASLA-603_14%ACN_20181003
+      ASLA-603_14%ACN_20181003.index
+      ASLA-603_14%ACN_20181003.raw
+      ASLA-603_14%ACN_Rerun_20181003
+      ASLA-603_14%ACN_Rerun_20181003.index
+      ASLA-603_14%ACN_Rerun_20181003.raw
+      ASLA-603_17%ACN_20181003
+      ASLA-603_17%ACN_20181003.index
+      ASLA-603_17%ACN_20181003.raw
+      ASLA-603_20%ACN_20181003
+      ASLA-603_20%ACN_20181003.index
+      ASLA-603_20%ACN_20181003.raw
+      ASLA-603_21%ACN_20181003
+      ASLA-603_21%ACN_20181003.index
+      ASLA-603_21%ACN_20181003.raw
+      ASLA-603_22%ACN_20181003
+      ASLA-603_22%ACN_20181003.index
+      ASLA-603_22%ACN_20181003.raw
+      ASLA-603_23%ACN_20181003
+      ASLA-603_23%ACN_20181003.index
+      ASLA-603_23%ACN_20181003.raw
+      ASLA-603_24%ACN_20181003
+      ASLA-603_24%ACN_20181003.index
+      ASLA-603_24%ACN_20181003.raw
+      ASLA-603_25%ACN_20181003
+      ASLA-603_25%ACN_20181003.index
+      ASLA-603_25%ACN_20181003.raw
+      ASLA-603_26%ACN_20181003
+      ASLA-603_26%ACN_20181003.index
+      ASLA-603_26%ACN_20181003.raw
+      ASLA-603_27%ACN_20181003
+      ASLA-603_27%ACN_20181003.index
+      ASLA-603_27%ACN_20181003.raw
+      ASLA-603_28%ACN_20181003
+      ASLA-603_28%ACN_20181003.index
+      ASLA-603_28%ACN_20181003.raw
+      ASLA-603_29%ACN_20181003
+      ASLA-603_29%ACN_20181003.index
+      ASLA-603_29%ACN_20181003.raw
+      ASLA-603_30%ACN_20181003
+      ASLA-603_30%ACN_20181003.index
+      ASLA-603_30%ACN_20181003.raw
+      ASLA-603_35%ACN_20181003
+      ASLA-603_35%ACN_20181003.index
+      ASLA-603_35%ACN_20181003.raw
+      ASLA-603_40%ACN_20181003
+      ASLA-603_40%ACN_20181003.index
+      ASLA-603_40%ACN_20181003.raw
+      ASLA-603_45%ACN_20181003
+      ASLA-603_45%ACN_20181003.index
+      ASLA-603_45%ACN_20181003.raw
+      ASLA-603_50%ACN_20181003
+      ASLA-603_50%ACN_20181003.index
+      ASLA-603_50%ACN_20181003.raw
+      ASLA-603_90%ACN_20181003
+      ASLA-603_90%ACN_20181003.index
+      ASLA-603_90%ACN_20181003.raw
+
+.........ASLA-626_40%ACN_20181126: -OK-
+.........ASLA-626_45%ACN_20181126: -OK-
+.........ASLA-626_50%ACN_20181126: -OK-
+.........ASLA-626_90%ACN_20181126: -OK-
+.........combined: -OK-
+
+--> /Volumes/PW_Black_4TB/Aslan_platelets/raw_files/combined/proc /Volumes/PW_Orange_4TB/Aslan_platelets/raw_files/combined/proc
+   right_only:
+      Apply_FDR__SP_ 11.finished.txt
+      Assembling_proteins 0155.finished.txt
+      Assembling_proteins 0255.finished.txt
+      Assembling_proteins 0355.finished.txt
+      Assembling_proteins 0455.finished.txt
+      Assembling_proteins 0555.finished.txt
+      Assembling_proteins 0655.finished.txt
+      Assembling_proteins 0755.finished.txt
+      Assembling_proteins 0855.finished.txt
+      Assembling_proteins 0955.finished.txt
+      Assembling_proteins 1055.finished.txt
+      Assembling_proteins 1155.finished.txt
+      Assembling_proteins 1255.finished.txt
+      Assembling_proteins 1355.finished.txt
+      Assembling_proteins 1455.finished.txt
+      Assembling_proteins 1555.finished.txt
+      Assembling_proteins 1655.finished.txt
+      Assembling_proteins 1755.finished.txt
+      Assembling_proteins 1855.finished.txt
+      Assembling_proteins 1955.finished.txt
+      Assembling_proteins 2055.finished.txt
+      Assembling_proteins 2155.finished.txt
+      Assembling_proteins 2255.finished.txt
+      Assembling_proteins 2355.finished.txt
+      Assembling_proteins 2455.finished.txt
+      Assembling_proteins 2555.finished.txt
+      Assembling_proteins 2655.finished.txt
+      Assembling_proteins 2755.finished.txt
+      Assembling_proteins 2855.finished.txt
+      Assembling_proteins 2955.finished.txt
+      Assembling_proteins 3055.finished.txt
+      Assembling_proteins 3155.finished.txt
+      Assembling_proteins 3255.finished.txt
+      Assembling_proteins 3355.finished.txt
+      Assembling_proteins 3455.finished.txt
+      Assembling_proteins 3555.finished.txt
+      Assembling_proteins 3655.finished.txt
+      Assembling_proteins 3755.finished.txt
+      Assembling_proteins 3855.finished.txt
+      Assembling_proteins 3955.finished.txt
+      Assembling_proteins 4055.finished.txt
+      Assembling_proteins 4155.finished.txt
+      Assembling_proteins 4255.finished.txt
+      Assembling_proteins 4355.finished.txt
+      Assembling_proteins 4455.finished.txt
+      Assembling_proteins 4555.finished.txt
+      Assembling_proteins 4655.finished.txt
+      Assembling_proteins 4755.finished.txt
+      Assembling_proteins 4855.finished.txt
+      Assembling_proteins 4955.finished.txt
+      Assembling_proteins 5055.finished.txt
+      Assembling_proteins 5155.finished.txt
+      Assembling_proteins 5255.finished.txt
+      Assembling_proteins 5355.finished.txt
+      Assembling_proteins 5455.finished.txt
+      Assembling_proteins 5555.finished.txt
+      Assembling_second_peptide_MSMS 0155.finished.txt
+      Assembling_second_peptide_MSMS 0255.finished.txt
+      Assembling_second_peptide_MSMS 0355.finished.txt
+      Assembling_second_peptide_MSMS 0455.finished.txt
+      Assembling_second_peptide_MSMS 0555.finished.txt
+      Assembling_second_peptide_MSMS 0655.finished.txt
+      Assembling_second_peptide_MSMS 0755.finished.txt
+      Assembling_second_peptide_MSMS 0855.finished.txt
+      Assembling_second_peptide_MSMS 0955.finished.txt
+      Assembling_second_peptide_MSMS 1055.finished.txt
+      Assembling_second_peptide_MSMS 1155.finished.txt
+      Assembling_second_peptide_MSMS 1255.finished.txt
+      Assembling_second_peptide_MSMS 1355.finished.txt
+      Assembling_second_peptide_MSMS 1455.finished.txt
+      Assembling_second_peptide_MSMS 1555.finished.txt
+      Assembling_second_peptide_MSMS 1655.finished.txt
+      Assembling_second_peptide_MSMS 1755.finished.txt
+      Assembling_second_peptide_MSMS 1855.finished.txt
+      Assembling_second_peptide_MSMS 1955.finished.txt
+      Assembling_second_peptide_MSMS 2055.finished.txt
+      Assembling_second_peptide_MSMS 2155.finished.txt
+      Assembling_second_peptide_MSMS 2255.finished.txt
+      Assembling_second_peptide_MSMS 2355.finished.txt
+      Assembling_second_peptide_MSMS 2455.finished.txt
+      Assembling_second_peptide_MSMS 2555.finished.txt
+      Assembling_second_peptide_MSMS 2655.finished.txt
+      Assembling_second_peptide_MSMS 2755.finished.txt
+      Assembling_second_peptide_MSMS 2855.finished.txt
+      Assembling_second_peptide_MSMS 2955.finished.txt
+      Assembling_second_peptide_MSMS 3055.finished.txt
+      Assembling_second_peptide_MSMS 3155.finished.txt
+      Assembling_second_peptide_MSMS 3255.finished.txt
+      Assembling_second_peptide_MSMS 3355.finished.txt
+      Assembling_second_peptide_MSMS 3455.finished.txt
+      Assembling_second_peptide_MSMS 3555.finished.txt
+      Assembling_second_peptide_MSMS 3655.finished.txt
+      Assembling_second_peptide_MSMS 3755.finished.txt
+      Assembling_second_peptide_MSMS 3855.finished.txt
+      Assembling_second_peptide_MSMS 3955.finished.txt
+      Assembling_second_peptide_MSMS 4055.finished.txt
+      Assembling_second_peptide_MSMS 4155.finished.txt
+      Assembling_second_peptide_MSMS 4255.finished.txt
+      Assembling_second_peptide_MSMS 4355.finished.txt
+      Assembling_second_peptide_MSMS 4455.finished.txt
+      Assembling_second_peptide_MSMS 4555.finished.txt
+      Assembling_second_peptide_MSMS 4655.finished.txt
+      Assembling_second_peptide_MSMS 4755.finished.txt
+      Assembling_second_peptide_MSMS 4855.finished.txt
+      Assembling_second_peptide_MSMS 4955.finished.txt
+      Assembling_second_peptide_MSMS 5055.finished.txt
+      Assembling_second_peptide_MSMS 5155.finished.txt
+      Assembling_second_peptide_MSMS 5255.finished.txt
+      Assembling_second_peptide_MSMS 5355.finished.txt
+      Assembling_second_peptide_MSMS 5455.finished.txt
+      Assembling_second_peptide_MSMS 5555.finished.txt
+      Assembling_unidentified_peptides 0155.finished.txt
+      Assembling_unidentified_peptides 0255.finished.txt
+      Assembling_unidentified_peptides 0355.finished.txt
+      Assembling_unidentified_peptides 0455.finished.txt
+      Assembling_unidentified_peptides 0555.finished.txt
+      Assembling_unidentified_peptides 0655.finished.txt
+      Assembling_unidentified_peptides 0755.finished.txt
+      Assembling_unidentified_peptides 0855.finished.txt
+      Assembling_unidentified_peptides 0955.finished.txt
+      Assembling_unidentified_peptides 1055.finished.txt
+      Assembling_unidentified_peptides 1155.finished.txt
+      Assembling_unidentified_peptides 1255.finished.txt
+      Assembling_unidentified_peptides 1355.finished.txt
+      Assembling_unidentified_peptides 1455.finished.txt
+      Assembling_unidentified_peptides 1555.finished.txt
+      Assembling_unidentified_peptides 1655.finished.txt
+      Assembling_unidentified_peptides 1755.finished.txt
+      Assembling_unidentified_peptides 1855.finished.txt
+      Assembling_unidentified_peptides 1955.finished.txt
+      Assembling_unidentified_peptides 2055.finished.txt
+      Assembling_unidentified_peptides 2155.finished.txt
+      Assembling_unidentified_peptides 2255.finished.txt
+      Assembling_unidentified_peptides 2355.finished.txt
+      Assembling_unidentified_peptides 2455.finished.txt
+      Assembling_unidentified_peptides 2555.finished.txt
+      Assembling_unidentified_peptides 2655.finished.txt
+      Assembling_unidentified_peptides 2755.finished.txt
+      Assembling_unidentified_peptides 2855.finished.txt
+      Assembling_unidentified_peptides 2955.finished.txt
+      Assembling_unidentified_peptides 3055.finished.txt
+      Assembling_unidentified_peptides 3155.finished.txt
+      Assembling_unidentified_peptides 3255.finished.txt
+      Assembling_unidentified_peptides 3355.finished.txt
+      Assembling_unidentified_peptides 3455.finished.txt
+      Assembling_unidentified_peptides 3555.finished.txt
+      Assembling_unidentified_peptides 3655.finished.txt
+      Assembling_unidentified_peptides 3755.finished.txt
+      Assembling_unidentified_peptides 3855.finished.txt
+      Assembling_unidentified_peptides 3955.finished.txt
+      Assembling_unidentified_peptides 4055.finished.txt
+      Assembling_unidentified_peptides 4155.finished.txt
+      Assembling_unidentified_peptides 4255.finished.txt
+      Assembling_unidentified_peptides 4355.finished.txt
+      Assembling_unidentified_peptides 4455.finished.txt
+      Assembling_unidentified_peptides 4555.finished.txt
+      Assembling_unidentified_peptides 4655.finished.txt
+      Assembling_unidentified_peptides 4755.finished.txt
+      Assembling_unidentified_peptides 4855.finished.txt
+      Assembling_unidentified_peptides 4955.finished.txt
+      Assembling_unidentified_peptides 5055.finished.txt
+      Assembling_unidentified_peptides 5155.finished.txt
+      Assembling_unidentified_peptides 5255.finished.txt
+      Assembling_unidentified_peptides 5355.finished.txt
+      Assembling_unidentified_peptides 5455.finished.txt
+      Assembling_unidentified_peptides 5555.finished.txt
+      Calculating_masses 0155.finished.txt
+      Calculating_masses 0255.finished.txt
+      Calculating_masses 0355.finished.txt
+      Calculating_masses 0455.finished.txt
+      Calculating_masses 0555.finished.txt
+      Calculating_masses 0655.finished.txt
+      Calculating_masses 0755.finished.txt
+      Calculating_masses 0855.finished.txt
+      Calculating_masses 0955.finished.txt
+      Calculating_masses 1055.finished.txt
+      Calculating_masses 1155.finished.txt
+      Calculating_masses 1255.finished.txt
+      Calculating_masses 1355.finished.txt
+      Calculating_masses 1455.finished.txt
+      Calculating_masses 1555.finished.txt
+      Calculating_masses 1655.finished.txt
+      Calculating_masses 1755.finished.txt
+      Calculating_masses 1855.finished.txt
+      Calculating_masses 1955.finished.txt
+      Calculating_masses 2055.finished.txt
+      Calculating_masses 2155.finished.txt
+      Calculating_masses 2255.finished.txt
+      Calculating_masses 2355.finished.txt
+      Calculating_masses 2455.finished.txt
+      Calculating_masses 2555.finished.txt
+      Calculating_masses 2655.finished.txt
+      Calculating_masses 2755.finished.txt
+      Calculating_masses 2855.finished.txt
+      Calculating_masses 2955.finished.txt
+      Calculating_masses 3055.finished.txt
+      Calculating_masses 3155.finished.txt
+      Calculating_masses 3255.finished.txt
+      Calculating_masses 3355.finished.txt
+      Calculating_masses 3455.finished.txt
+      Calculating_masses 3555.finished.txt
+      Calculating_masses 3655.finished.txt
+      Calculating_masses 3755.finished.txt
+      Calculating_masses 3855.finished.txt
+      Calculating_masses 3955.finished.txt
+      Calculating_masses 4055.finished.txt
+      Calculating_masses 4155.finished.txt
+      Calculating_masses 4255.finished.txt
+      Calculating_masses 4355.finished.txt
+      Calculating_masses 4455.finished.txt
+      Calculating_masses 4555.finished.txt
+      Calculating_masses 4655.finished.txt
+      Calculating_masses 4755.finished.txt
+      Calculating_masses 4855.finished.txt
+      Calculating_masses 4955.finished.txt
+      Calculating_masses 5055.finished.txt
+      Calculating_masses 5155.finished.txt
+      Calculating_masses 5255.finished.txt
+      Calculating_masses 5355.finished.txt
+      Calculating_masses 5455.finished.txt
+      Calculating_masses 5555.finished.txt
+      Calculating_peak_properties 0155.finished.txt
+      Calculating_peak_properties 0255.finished.txt
+      Calculating_peak_properties 0355.finished.txt
+      Calculating_peak_properties 0455.finished.txt
+      Calculating_peak_properties 0555.finished.txt
+      Calculating_peak_properties 0655.finished.txt
+      Calculating_peak_properties 0755.finished.txt
+      Calculating_peak_properties 0855.finished.txt
+      Calculating_peak_properties 0955.finished.txt
+      Calculating_peak_properties 1055.finished.txt
+      Calculating_peak_properties 1155.finished.txt
+      Calculating_peak_properties 1255.finished.txt
+      Calculating_peak_properties 1355.finished.txt
+      Calculating_peak_properties 1455.finished.txt
+      Calculating_peak_properties 1555.finished.txt
+      Calculating_peak_properties 1655.finished.txt
+      Calculating_peak_properties 1755.finished.txt
+      Calculating_peak_properties 1855.finished.txt
+      Calculating_peak_properties 1955.finished.txt
+      Calculating_peak_properties 2055.finished.txt
+      Calculating_peak_properties 2155.finished.txt
+      Calculating_peak_properties 2255.finished.txt
+      Calculating_peak_properties 2355.finished.txt
+      Calculating_peak_properties 2455.finished.txt
+      Calculating_peak_properties 2555.finished.txt
+      Calculating_peak_properties 2655.finished.txt
+      Calculating_peak_properties 2755.finished.txt
+      Calculating_peak_properties 2855.finished.txt
+      Calculating_peak_properties 2955.finished.txt
+      Calculating_peak_properties 3055.finished.txt
+      Calculating_peak_properties 3155.finished.txt
+      Calculating_peak_properties 3255.finished.txt
+      Calculating_peak_properties 3355.finished.txt
+      Calculating_peak_properties 3455.finished.txt
+      Calculating_peak_properties 3555.finished.txt
+      Calculating_peak_properties 3655.finished.txt
+      Calculating_peak_properties 3755.finished.txt
+      Calculating_peak_properties 3855.finished.txt
+      Calculating_peak_properties 3955.finished.txt
+      Calculating_peak_properties 4055.finished.txt
+      Calculating_peak_properties 4155.finished.txt
+      Calculating_peak_properties 4255.finished.txt
+      Calculating_peak_properties 4355.finished.txt
+      Calculating_peak_properties 4455.finished.txt
+      Calculating_peak_properties 4555.finished.txt
+      Calculating_peak_properties 4655.finished.txt
+      Calculating_peak_properties 4755.finished.txt
+      Calculating_peak_properties 4855.finished.txt
+      Calculating_peak_properties 4955.finished.txt
+      Calculating_peak_properties 5055.finished.txt
+      Calculating_peak_properties 5155.finished.txt
+      Calculating_peak_properties 5255.finished.txt
+      Calculating_peak_properties 5355.finished.txt
+      Calculating_peak_properties 5455.finished.txt
+      Calculating_peak_properties 5555.finished.txt
+      Creating_peptide_list 0112.finished.txt
+      Creating_peptide_list 0212.finished.txt
+      Creating_peptide_list 0312.finished.txt
+      Creating_peptide_list 0412.finished.txt
+      Creating_peptide_list 0512.finished.txt
+      Creating_peptide_list 0612.finished.txt
+      Creating_peptide_list 0712.finished.txt
+      Creating_peptide_list 0812.finished.txt
+      Creating_peptide_list 0912.finished.txt
+      Creating_peptide_list 1012.finished.txt
+      Creating_peptide_list 1112.finished.txt
+      Creating_peptide_list 1212.finished.txt
+      Creating_peptide_list 18.finished.txt
+      Creating_peptide_list 28.finished.txt
+      Creating_peptide_list 38.finished.txt
+      Creating_peptide_list 48.finished.txt
+      Creating_peptide_list 58.finished.txt
+      Creating_peptide_list 68.finished.txt
+      Creating_peptide_list 78.finished.txt
+      Creating_peptide_list 88.finished.txt
+      Creating_protein_files 14.finished.txt
+      Creating_protein_files 24.finished.txt
+      Creating_protein_files 34.finished.txt
+      Creating_protein_files 44.finished.txt
+      Digesting_proteins 14.finished.txt
+      Digesting_proteins 16.finished.txt
+      Digesting_proteins 24.finished.txt
+      Digesting_proteins 26.finished.txt
+      Digesting_proteins 34.finished.txt
+      Digesting_proteins 36.finished.txt
+      Digesting_proteins 44.finished.txt
+      Digesting_proteins 46.finished.txt
+      Digesting_proteins 56.finished.txt
+      Digesting_proteins 66.finished.txt
+      Estimating_complexity 0155.finished.txt
+      Estimating_complexity 0255.finished.txt
+      Estimating_complexity 0355.finished.txt
+      Estimating_complexity 0455.finished.txt
+      Estimating_complexity 0555.finished.txt
+      Estimating_complexity 0655.finished.txt
+      Estimating_complexity 0755.finished.txt
+      Estimating_complexity 0855.finished.txt
+      Estimating_complexity 0955.finished.txt
+      Estimating_complexity 1055.finished.txt
+      Estimating_complexity 1155.finished.txt
+      Estimating_complexity 1255.finished.txt
+      Estimating_complexity 1355.finished.txt
+      Estimating_complexity 1455.finished.txt
+      Estimating_complexity 1555.finished.txt
+      Estimating_complexity 1655.finished.txt
+      Estimating_complexity 1755.finished.txt
+      Estimating_complexity 1855.finished.txt
+      Estimating_complexity 1955.finished.txt
+      Estimating_complexity 2055.finished.txt
+      Estimating_complexity 2155.finished.txt
+      Estimating_complexity 2255.finished.txt
+      Estimating_complexity 2355.finished.txt
+      Estimating_complexity 2455.finished.txt
+      Estimating_complexity 2555.finished.txt
+      Estimating_complexity 2655.finished.txt
+      Estimating_complexity 2755.finished.txt
+      Estimating_complexity 2855.finished.txt
+      Estimating_complexity 2955.finished.txt
+      Estimating_complexity 3055.finished.txt
+      Estimating_complexity 3155.finished.txt
+      Estimating_complexity 3255.finished.txt
+      Estimating_complexity 3355.finished.txt
+      Estimating_complexity 3455.finished.txt
+      Estimating_complexity 3555.finished.txt
+      Estimating_complexity 3655.finished.txt
+      Estimating_complexity 3755.finished.txt
+      Estimating_complexity 3855.finished.txt
+      Estimating_complexity 3955.finished.txt
+      Estimating_complexity 4055.finished.txt
+      Estimating_complexity 4155.finished.txt
+      Estimating_complexity 4255.finished.txt
+      Estimating_complexity 4355.finished.txt
+      Estimating_complexity 4455.finished.txt
+      Estimating_complexity 4555.finished.txt
+      Estimating_complexity 4655.finished.txt
+      Estimating_complexity 4755.finished.txt
+      Estimating_complexity 4855.finished.txt
+      Estimating_complexity 4955.finished.txt
+      Estimating_complexity 5055.finished.txt
+      Estimating_complexity 5155.finished.txt
+      Estimating_complexity 5255.finished.txt
+      Estimating_complexity 5355.finished.txt
+      Estimating_complexity 5455.finished.txt
+      Estimating_complexity 5555.finished.txt
+      Feature_detection 0155.finished.txt
+      Feature_detection 0255.finished.txt
+      Feature_detection 0355.finished.txt
+      Feature_detection 0455.finished.txt
+      Feature_detection 0555.finished.txt
+      Feature_detection 0655.finished.txt
+      Feature_detection 0755.finished.txt
+      Feature_detection 0855.finished.txt
+      Feature_detection 0955.finished.txt
+      Feature_detection 1055.finished.txt
+      Feature_detection 1155.finished.txt
+      Feature_detection 1255.finished.txt
+      Feature_detection 1355.finished.txt
+      Feature_detection 1455.finished.txt
+      Feature_detection 1555.finished.txt
+      Feature_detection 1655.finished.txt
+      Feature_detection 1755.finished.txt
+      Feature_detection 1855.finished.txt
+      Feature_detection 1955.finished.txt
+      Feature_detection 2055.finished.txt
+      Feature_detection 2155.finished.txt
+      Feature_detection 2255.finished.txt
+      Feature_detection 2355.finished.txt
+      Feature_detection 2455.finished.txt
+      Feature_detection 2555.finished.txt
+      Feature_detection 2655.finished.txt
+      Feature_detection 2755.finished.txt
+      Feature_detection 2855.finished.txt
+      Feature_detection 2955.finished.txt
+      Feature_detection 3055.finished.txt
+      Feature_detection 3155.finished.txt
+      Feature_detection 3255.finished.txt
+      Feature_detection 3355.finished.txt
+      Feature_detection 3455.finished.txt
+      Feature_detection 3555.finished.txt
+      Feature_detection 3655.finished.txt
+      Feature_detection 3755.finished.txt
+      Feature_detection 3855.finished.txt
+      Feature_detection 3955.finished.txt
+      Feature_detection 4055.finished.txt
+      Feature_detection 4155.finished.txt
+      Feature_detection 4255.finished.txt
+      Feature_detection 4355.finished.txt
+      Feature_detection 4455.finished.txt
+      Feature_detection 4555.finished.txt
+      Feature_detection 4655.finished.txt
+      Feature_detection 4755.finished.txt
+      Feature_detection 4855.finished.txt
+      Feature_detection 4955.finished.txt
+      Feature_detection 5055.finished.txt
+      Feature_detection 5155.finished.txt
+      Feature_detection 5255.finished.txt
+      Feature_detection 5355.finished.txt
+      Feature_detection 5455.finished.txt
+      Feature_detection 5555.finished.txt
+      Filter_identifications__MSMS_ 0155.finished.txt
+      Filter_identifications__MSMS_ 0255.finished.txt
+      Filter_identifications__MSMS_ 0355.finished.txt
+      Filter_identifications__MSMS_ 0455.finished.txt
+      Filter_identifications__MSMS_ 0555.finished.txt
+      Filter_identifications__MSMS_ 0655.finished.txt
+      Filter_identifications__MSMS_ 0755.finished.txt
+      Filter_identifications__MSMS_ 0855.finished.txt
+      Filter_identifications__MSMS_ 0955.finished.txt
+      Filter_identifications__MSMS_ 1055.finished.txt
+      Filter_identifications__MSMS_ 1155.finished.txt
+      Filter_identifications__MSMS_ 1255.finished.txt
+      Filter_identifications__MSMS_ 1355.finished.txt
+      Filter_identifications__MSMS_ 1455.finished.txt
+      Filter_identifications__MSMS_ 1555.finished.txt
+      Filter_identifications__MSMS_ 1655.finished.txt
+      Filter_identifications__MSMS_ 1755.finished.txt
+      Filter_identifications__MSMS_ 1855.finished.txt
+      Filter_identifications__MSMS_ 1955.finished.txt
+      Filter_identifications__MSMS_ 2055.finished.txt
+      Filter_identifications__MSMS_ 2155.finished.txt
+      Filter_identifications__MSMS_ 2255.finished.txt
+      Filter_identifications__MSMS_ 2355.finished.txt
+      Filter_identifications__MSMS_ 2455.finished.txt
+      Filter_identifications__MSMS_ 2555.finished.txt
+      Filter_identifications__MSMS_ 2655.finished.txt
+      Filter_identifications__MSMS_ 2755.finished.txt
+      Filter_identifications__MSMS_ 2855.finished.txt
+      Filter_identifications__MSMS_ 2955.finished.txt
+      Filter_identifications__MSMS_ 3055.finished.txt
+      Filter_identifications__MSMS_ 3155.finished.txt
+      Filter_identifications__MSMS_ 3255.finished.txt
+      Filter_identifications__MSMS_ 3355.finished.txt
+      Filter_identifications__MSMS_ 3455.finished.txt
+      Filter_identifications__MSMS_ 3555.finished.txt
+      Filter_identifications__MSMS_ 3655.finished.txt
+      Filter_identifications__MSMS_ 3755.finished.txt
+      Filter_identifications__MSMS_ 3855.finished.txt
+      Filter_identifications__MSMS_ 3955.finished.txt
+      Filter_identifications__MSMS_ 4055.finished.txt
+      Filter_identifications__MSMS_ 4155.finished.txt
+      Filter_identifications__MSMS_ 4255.finished.txt
+      Filter_identifications__MSMS_ 4355.finished.txt
+      Filter_identifications__MSMS_ 4455.finished.txt
+      Filter_identifications__MSMS_ 4555.finished.txt
+      Filter_identifications__MSMS_ 4655.finished.txt
+      Filter_identifications__MSMS_ 4755.finished.txt
+      Filter_identifications__MSMS_ 4855.finished.txt
+      Filter_identifications__MSMS_ 4955.finished.txt
+      Filter_identifications__MSMS_ 5055.finished.txt
+      Filter_identifications__MSMS_ 5155.finished.txt
+      Filter_identifications__MSMS_ 5255.finished.txt
+      Filter_identifications__MSMS_ 5355.finished.txt
+      Filter_identifications__MSMS_ 5455.finished.txt
+      Filter_identifications__MSMS_ 5555.finished.txt
+      Filtering_identifications__SP_ 0155.finished.txt
+      Filtering_identifications__SP_ 0255.finished.txt
+      Filtering_identifications__SP_ 0355.finished.txt
+      Filtering_identifications__SP_ 0455.finished.txt
+      Filtering_identifications__SP_ 0555.finished.txt
+      Filtering_identifications__SP_ 0655.finished.txt
+      Filtering_identifications__SP_ 0755.finished.txt
+      Filtering_identifications__SP_ 0855.finished.txt
+      Filtering_identifications__SP_ 0955.finished.txt
+      Filtering_identifications__SP_ 1055.finished.txt
+      Filtering_identifications__SP_ 1155.finished.txt
+      Filtering_identifications__SP_ 1255.finished.txt
+      Filtering_identifications__SP_ 1355.finished.txt
+      Filtering_identifications__SP_ 1455.finished.txt
+      Filtering_identifications__SP_ 1555.finished.txt
+      Filtering_identifications__SP_ 1655.finished.txt
+      Filtering_identifications__SP_ 1755.finished.txt
+      Filtering_identifications__SP_ 1855.finished.txt
+      Filtering_identifications__SP_ 1955.finished.txt
+      Filtering_identifications__SP_ 2055.finished.txt
+      Filtering_identifications__SP_ 2155.finished.txt
+      Filtering_identifications__SP_ 2255.finished.txt
+      Filtering_identifications__SP_ 2355.finished.txt
+      Filtering_identifications__SP_ 2455.finished.txt
+      Filtering_identifications__SP_ 2555.finished.txt
+      Filtering_identifications__SP_ 2655.finished.txt
+      Filtering_identifications__SP_ 2755.finished.txt
+      Filtering_identifications__SP_ 2855.finished.txt
+      Filtering_identifications__SP_ 2955.finished.txt
+      Filtering_identifications__SP_ 3055.finished.txt
+      Filtering_identifications__SP_ 3155.finished.txt
+      Filtering_identifications__SP_ 3255.finished.txt
+      Filtering_identifications__SP_ 3355.finished.txt
+      Filtering_identifications__SP_ 3455.finished.txt
+      Filtering_identifications__SP_ 3555.finished.txt
+      Filtering_identifications__SP_ 3655.finished.txt
+      Filtering_identifications__SP_ 3755.finished.txt
+      Filtering_identifications__SP_ 3855.finished.txt
+      Filtering_identifications__SP_ 3955.finished.txt
+      Filtering_identifications__SP_ 4055.finished.txt
+      Filtering_identifications__SP_ 4155.finished.txt
+      Filtering_identifications__SP_ 4255.finished.txt
+      Filtering_identifications__SP_ 4355.finished.txt
+      Filtering_identifications__SP_ 4455.finished.txt
+      Filtering_identifications__SP_ 4555.finished.txt
+      Filtering_identifications__SP_ 4655.finished.txt
+      Filtering_identifications__SP_ 4755.finished.txt
+      Filtering_identifications__SP_ 4855.finished.txt
+      Filtering_identifications__SP_ 4955.finished.txt
+      Filtering_identifications__SP_ 5055.finished.txt
+      Filtering_identifications__SP_ 5155.finished.txt
+      Filtering_identifications__SP_ 5255.finished.txt
+      Filtering_identifications__SP_ 5355.finished.txt
+      Filtering_identifications__SP_ 5455.finished.txt
+      Filtering_identifications__SP_ 5555.finished.txt
+      Finish_search_engine_results 0155.finished.txt
+      Finish_search_engine_results 0255.finished.txt
+      Finish_search_engine_results 0355.finished.txt
+      Finish_search_engine_results 0455.finished.txt
+      Finish_search_engine_results 0555.finished.txt
+      Finish_search_engine_results 0655.finished.txt
+      Finish_search_engine_results 0755.finished.txt
+      Finish_search_engine_results 0855.finished.txt
+      Finish_search_engine_results 0955.finished.txt
+      Finish_search_engine_results 1055.finished.txt
+      Finish_search_engine_results 1155.finished.txt
+      Finish_search_engine_results 1255.finished.txt
+      Finish_search_engine_results 1355.finished.txt
+      Finish_search_engine_results 1455.finished.txt
+      Finish_search_engine_results 1555.finished.txt
+      Finish_search_engine_results 1655.finished.txt
+      Finish_search_engine_results 1755.finished.txt
+      Finish_search_engine_results 1855.finished.txt
+      Finish_search_engine_results 1955.finished.txt
+      Finish_search_engine_results 2055.finished.txt
+      Finish_search_engine_results 2155.finished.txt
+      Finish_search_engine_results 2255.finished.txt
+      Finish_search_engine_results 2355.finished.txt
+      Finish_search_engine_results 2455.finished.txt
+      Finish_search_engine_results 2555.finished.txt
+      Finish_search_engine_results 2655.finished.txt
+      Finish_search_engine_results 2755.finished.txt
+      Finish_search_engine_results 2855.finished.txt
+      Finish_search_engine_results 2955.finished.txt
+      Finish_search_engine_results 3055.finished.txt
+      Finish_search_engine_results 3155.finished.txt
+      Finish_search_engine_results 3255.finished.txt
+      Finish_search_engine_results 3355.finished.txt
+      Finish_search_engine_results 3455.finished.txt
+      Finish_search_engine_results 3555.finished.txt
+      Finish_search_engine_results 3655.finished.txt
+      Finish_search_engine_results 3755.finished.txt
+      Finish_search_engine_results 3855.finished.txt
+      Finish_search_engine_results 3955.finished.txt
+      Finish_search_engine_results 4055.finished.txt
+      Finish_search_engine_results 4155.finished.txt
+      Finish_search_engine_results 4255.finished.txt
+      Finish_search_engine_results 4355.finished.txt
+      Finish_search_engine_results 4455.finished.txt
+      Finish_search_engine_results 4555.finished.txt
+      Finish_search_engine_results 4655.finished.txt
+      Finish_search_engine_results 4755.finished.txt
+      Finish_search_engine_results 4855.finished.txt
+      Finish_search_engine_results 4955.finished.txt
+      Finish_search_engine_results 5055.finished.txt
+      Finish_search_engine_results 5155.finished.txt
+      Finish_search_engine_results 5255.finished.txt
+      Finish_search_engine_results 5355.finished.txt
+      Finish_search_engine_results 5455.finished.txt
+      Finish_search_engine_results 5555.finished.txt
+      Finish_search_engine_results__SP_ 0155.finished.txt
+      Finish_search_engine_results__SP_ 0255.finished.txt
+      Finish_search_engine_results__SP_ 0355.finished.txt
+      Finish_search_engine_results__SP_ 0455.finished.txt
+      Finish_search_engine_results__SP_ 0555.finished.txt
+      Finish_search_engine_results__SP_ 0655.finished.txt
+      Finish_search_engine_results__SP_ 0755.finished.txt
+      Finish_search_engine_results__SP_ 0855.finished.txt
+      Finish_search_engine_results__SP_ 0955.finished.txt
+      Finish_search_engine_results__SP_ 1055.finished.txt
+      Finish_search_engine_results__SP_ 1155.finished.txt
+      Finish_search_engine_results__SP_ 1255.finished.txt
+      Finish_search_engine_results__SP_ 1355.finished.txt
+      Finish_search_engine_results__SP_ 1455.finished.txt
+      Finish_search_engine_results__SP_ 1555.finished.txt
+      Finish_search_engine_results__SP_ 1655.finished.txt
+      Finish_search_engine_results__SP_ 1755.finished.txt
+      Finish_search_engine_results__SP_ 1855.finished.txt
+      Finish_search_engine_results__SP_ 1955.finished.txt
+      Finish_search_engine_results__SP_ 2055.finished.txt
+      Finish_search_engine_results__SP_ 2155.finished.txt
+      Finish_search_engine_results__SP_ 2255.finished.txt
+      Finish_search_engine_results__SP_ 2355.finished.txt
+      Finish_search_engine_results__SP_ 2455.finished.txt
+      Finish_search_engine_results__SP_ 2555.finished.txt
+      Finish_search_engine_results__SP_ 2655.finished.txt
+      Finish_search_engine_results__SP_ 2755.finished.txt
+      Finish_search_engine_results__SP_ 2855.finished.txt
+      Finish_search_engine_results__SP_ 2955.finished.txt
+      Finish_search_engine_results__SP_ 3055.finished.txt
+      Finish_search_engine_results__SP_ 3155.finished.txt
+      Finish_search_engine_results__SP_ 3255.finished.txt
+      Finish_search_engine_results__SP_ 3355.finished.txt
+      Finish_search_engine_results__SP_ 3455.finished.txt
+      Finish_search_engine_results__SP_ 3555.finished.txt
+      Finish_search_engine_results__SP_ 3655.finished.txt
+      Finish_search_engine_results__SP_ 3755.finished.txt
+      Finish_search_engine_results__SP_ 3855.finished.txt
+      Finish_search_engine_results__SP_ 3955.finished.txt
+      Finish_search_engine_results__SP_ 4055.finished.txt
+      Finish_search_engine_results__SP_ 4155.finished.txt
+      Finish_search_engine_results__SP_ 4255.finished.txt
+      Finish_search_engine_results__SP_ 4355.finished.txt
+      Finish_search_engine_results__SP_ 4455.finished.txt
+      Finish_search_engine_results__SP_ 4555.finished.txt
+      Finish_search_engine_results__SP_ 4655.finished.txt
+      Finish_search_engine_results__SP_ 4755.finished.txt
+      Finish_search_engine_results__SP_ 4855.finished.txt
+      Finish_search_engine_results__SP_ 4955.finished.txt
+      Finish_search_engine_results__SP_ 5055.finished.txt
+      Finish_search_engine_results__SP_ 5155.finished.txt
+      Finish_search_engine_results__SP_ 5255.finished.txt
+      Finish_search_engine_results__SP_ 5355.finished.txt
+      Finish_search_engine_results__SP_ 5455.finished.txt
+      Finish_search_engine_results__SP_ 5555.finished.txt
+      Joining_temporary_mass_lists 11.finished.txt
+      Joining_temporary_peptide_files 11.finished.txt
+      Joining_temporary_peptide_files 12.finished.txt
+      Joining_temporary_peptide_files 13.finished.txt
+      Joining_temporary_peptide_files 22.finished.txt
+      Joining_temporary_peptide_files 23.finished.txt
+      Joining_temporary_peptide_files 33.finished.txt
+      MSMS_first_search 0155.finished.txt
+      MSMS_first_search 0255.finished.txt
+      MSMS_first_search 0355.finished.txt
+      MSMS_first_search 0455.finished.txt
+      MSMS_first_search 0555.finished.txt
+      MSMS_first_search 0655.finished.txt
+      MSMS_first_search 0755.finished.txt
+      MSMS_first_search 0855.finished.txt
+      MSMS_first_search 0955.finished.txt
+      MSMS_first_search 1055.finished.txt
+      MSMS_first_search 1155.finished.txt
+      MSMS_first_search 1255.finished.txt
+      MSMS_first_search 1355.finished.txt
+      MSMS_first_search 1455.finished.txt
+      MSMS_first_search 1555.finished.txt
+      MSMS_first_search 1655.finished.txt
+      MSMS_first_search 1755.finished.txt
+      MSMS_first_search 1855.finished.txt
+      MSMS_first_search 1955.finished.txt
+      MSMS_first_search 2055.finished.txt
+      MSMS_first_search 2155.finished.txt
+      MSMS_first_search 2255.finished.txt
+      MSMS_first_search 2355.finished.txt
+      MSMS_first_search 2455.finished.txt
+      MSMS_first_search 2555.finished.txt
+      MSMS_first_search 2655.finished.txt
+      MSMS_first_search 2755.finished.txt
+      MSMS_first_search 2855.finished.txt
+      MSMS_first_search 2955.finished.txt
+      MSMS_first_search 3055.finished.txt
+      MSMS_first_search 3155.finished.txt
+      MSMS_first_search 3255.finished.txt
+      MSMS_first_search 3355.finished.txt
+      MSMS_first_search 3455.finished.txt
+      MSMS_first_search 3555.finished.txt
+      MSMS_first_search 3655.finished.txt
+      MSMS_first_search 3755.finished.txt
+      MSMS_first_search 3855.finished.txt
+      MSMS_first_search 3955.finished.txt
+      MSMS_first_search 4055.finished.txt
+      MSMS_first_search 4155.finished.txt
+      MSMS_first_search 4255.finished.txt
+      MSMS_first_search 4355.finished.txt
+      MSMS_first_search 4455.finished.txt
+      MSMS_first_search 4555.finished.txt
+      MSMS_first_search 4655.finished.txt
+      MSMS_first_search 4755.finished.txt
+      MSMS_first_search 4855.finished.txt
+      MSMS_first_search 4955.finished.txt
+      MSMS_first_search 5055.finished.txt
+      MSMS_first_search 5155.finished.txt
+      MSMS_first_search 5255.finished.txt
+      MSMS_first_search 5355.finished.txt
+      MSMS_first_search 5455.finished.txt
+      MSMS_first_search 5555.finished.txt
+      MSMS_main_search 0155.finished.txt
+      MSMS_main_search 0255.finished.txt
+      MSMS_main_search 0355.finished.txt
+      MSMS_main_search 0455.finished.txt
+      MSMS_main_search 0555.finished.txt
+      MSMS_main_search 0655.finished.txt
+      MSMS_main_search 0755.finished.txt
+      MSMS_main_search 0855.finished.txt
+      MSMS_main_search 0955.finished.txt
+      MSMS_main_search 1055.finished.txt
+      MSMS_main_search 1155.finished.txt
+      MSMS_main_search 1255.finished.txt
+      MSMS_main_search 1355.finished.txt
+      MSMS_main_search 1455.finished.txt
+      MSMS_main_search 1555.finished.txt
+      MSMS_main_search 1655.finished.txt
+      MSMS_main_search 1755.finished.txt
+      MSMS_main_search 1855.finished.txt
+      MSMS_main_search 1955.finished.txt
+      MSMS_main_search 2055.finished.txt
+      MSMS_main_search 2155.finished.txt
+      MSMS_main_search 2255.finished.txt
+      MSMS_main_search 2355.finished.txt
+      MSMS_main_search 2455.finished.txt
+      MSMS_main_search 2555.finished.txt
+      MSMS_main_search 2655.finished.txt
+      MSMS_main_search 2755.finished.txt
+      MSMS_main_search 2855.finished.txt
+      MSMS_main_search 2955.finished.txt
+      MSMS_main_search 3055.finished.txt
+      MSMS_main_search 3155.finished.txt
+      MSMS_main_search 3255.finished.txt
+      MSMS_main_search 3355.finished.txt
+      MSMS_main_search 3455.finished.txt
+      MSMS_main_search 3555.finished.txt
+      MSMS_main_search 3655.finished.txt
+      MSMS_main_search 3755.finished.txt
+      MSMS_main_search 3855.finished.txt
+      MSMS_main_search 3955.finished.txt
+      MSMS_main_search 4055.finished.txt
+      MSMS_main_search 4155.finished.txt
+      MSMS_main_search 4255.finished.txt
+      MSMS_main_search 4355.finished.txt
+      MSMS_main_search 4455.finished.txt
+      MSMS_main_search 4555.finished.txt
+      MSMS_main_search 4655.finished.txt
+      MSMS_main_search 4755.finished.txt
+      MSMS_main_search 4855.finished.txt
+      MSMS_main_search 4955.finished.txt
+      MSMS_main_search 5055.finished.txt
+      MSMS_main_search 5155.finished.txt
+      MSMS_main_search 5255.finished.txt
+      MSMS_main_search 5355.finished.txt
+      MSMS_main_search 5455.finished.txt
+      MSMS_main_search 5555.finished.txt
+      MSMS_preparation_for_main_search 0155.finished.txt
+      MSMS_preparation_for_main_search 0255.finished.txt
+      MSMS_preparation_for_main_search 0355.finished.txt
+      MSMS_preparation_for_main_search 0455.finished.txt
+      MSMS_preparation_for_main_search 0555.finished.txt
+      MSMS_preparation_for_main_search 0655.finished.txt
+      MSMS_preparation_for_main_search 0755.finished.txt
+      MSMS_preparation_for_main_search 0855.finished.txt
+      MSMS_preparation_for_main_search 0955.finished.txt
+      MSMS_preparation_for_main_search 1055.finished.txt
+      MSMS_preparation_for_main_search 1155.finished.txt
+      MSMS_preparation_for_main_search 1255.finished.txt
+      MSMS_preparation_for_main_search 1355.finished.txt
+      MSMS_preparation_for_main_search 1455.finished.txt
+      MSMS_preparation_for_main_search 1555.finished.txt
+      MSMS_preparation_for_main_search 1655.finished.txt
+      MSMS_preparation_for_main_search 1755.finished.txt
+      MSMS_preparation_for_main_search 1855.finished.txt
+      MSMS_preparation_for_main_search 1955.finished.txt
+      MSMS_preparation_for_main_search 2055.finished.txt
+      MSMS_preparation_for_main_search 2155.finished.txt
+      MSMS_preparation_for_main_search 2255.finished.txt
+      MSMS_preparation_for_main_search 2355.finished.txt
+      MSMS_preparation_for_main_search 2455.finished.txt
+      MSMS_preparation_for_main_search 2555.finished.txt
+      MSMS_preparation_for_main_search 2655.finished.txt
+      MSMS_preparation_for_main_search 2755.finished.txt
+      MSMS_preparation_for_main_search 2855.finished.txt
+      MSMS_preparation_for_main_search 2955.finished.txt
+      MSMS_preparation_for_main_search 3055.finished.txt
+      MSMS_preparation_for_main_search 3155.finished.txt
+      MSMS_preparation_for_main_search 3255.finished.txt
+      MSMS_preparation_for_main_search 3355.finished.txt
+      MSMS_preparation_for_main_search 3455.finished.txt
+      MSMS_preparation_for_main_search 3555.finished.txt
+      MSMS_preparation_for_main_search 3655.finished.txt
+      MSMS_preparation_for_main_search 3755.finished.txt
+      MSMS_preparation_for_main_search 3855.finished.txt
+      MSMS_preparation_for_main_search 3955.finished.txt
+      MSMS_preparation_for_main_search 4055.finished.txt
+      MSMS_preparation_for_main_search 4155.finished.txt
+      MSMS_preparation_for_main_search 4255.finished.txt
+      MSMS_preparation_for_main_search 4355.finished.txt
+      MSMS_preparation_for_main_search 4455.finished.txt
+      MSMS_preparation_for_main_search 4555.finished.txt
+      MSMS_preparation_for_main_search 4655.finished.txt
+      MSMS_preparation_for_main_search 4755.finished.txt
+      MSMS_preparation_for_main_search 4855.finished.txt
+      MSMS_preparation_for_main_search 4955.finished.txt
+      MSMS_preparation_for_main_search 5055.finished.txt
+      MSMS_preparation_for_main_search 5155.finished.txt
+      MSMS_preparation_for_main_search 5255.finished.txt
+      MSMS_preparation_for_main_search 5355.finished.txt
+      MSMS_preparation_for_main_search 5455.finished.txt
+      MSMS_preparation_for_main_search 5555.finished.txt
+      Mass_recalibration 0155.finished.txt
+      Mass_recalibration 0255.finished.txt
+      Mass_recalibration 0355.finished.txt
+      Mass_recalibration 0455.finished.txt
+      Mass_recalibration 0555.finished.txt
+      Mass_recalibration 0655.finished.txt
+      Mass_recalibration 0755.finished.txt
+      Mass_recalibration 0855.finished.txt
+      Mass_recalibration 0955.finished.txt
+      Mass_recalibration 1055.finished.txt
+      Mass_recalibration 1155.finished.txt
+      Mass_recalibration 1255.finished.txt
+      Mass_recalibration 1355.finished.txt
+      Mass_recalibration 1455.finished.txt
+      Mass_recalibration 1555.finished.txt
+      Mass_recalibration 1655.finished.txt
+      Mass_recalibration 1755.finished.txt
+      Mass_recalibration 1855.finished.txt
+      Mass_recalibration 1955.finished.txt
+      Mass_recalibration 2055.finished.txt
+      Mass_recalibration 2155.finished.txt
+      Mass_recalibration 2255.finished.txt
+      Mass_recalibration 2355.finished.txt
+      Mass_recalibration 2455.finished.txt
+      Mass_recalibration 2555.finished.txt
+      Mass_recalibration 2655.finished.txt
+      Mass_recalibration 2755.finished.txt
+      Mass_recalibration 2855.finished.txt
+      Mass_recalibration 2955.finished.txt
+      Mass_recalibration 3055.finished.txt
+      Mass_recalibration 3155.finished.txt
+      Mass_recalibration 3255.finished.txt
+      Mass_recalibration 3355.finished.txt
+      Mass_recalibration 3455.finished.txt
+      Mass_recalibration 3555.finished.txt
+      Mass_recalibration 3655.finished.txt
+      Mass_recalibration 3755.finished.txt
+      Mass_recalibration 3855.finished.txt
+      Mass_recalibration 3955.finished.txt
+      Mass_recalibration 4055.finished.txt
+      Mass_recalibration 4155.finished.txt
+      Mass_recalibration 4255.finished.txt
+      Mass_recalibration 4355.finished.txt
+      Mass_recalibration 4455.finished.txt
+      Mass_recalibration 4555.finished.txt
+      Mass_recalibration 4655.finished.txt
+      Mass_recalibration 4755.finished.txt
+      Mass_recalibration 4855.finished.txt
+      Mass_recalibration 4955.finished.txt
+      Mass_recalibration 5055.finished.txt
+      Mass_recalibration 5155.finished.txt
+      Mass_recalibration 5255.finished.txt
+      Mass_recalibration 5355.finished.txt
+      Mass_recalibration 5455.finished.txt
+      Mass_recalibration 5555.finished.txt
+      Re-quantification 0155.finished.txt
+      Re-quantification 0255.finished.txt
+      Re-quantification 0355.finished.txt
+      Re-quantification 0455.finished.txt
+      Re-quantification 0555.finished.txt
+      Re-quantification 0655.finished.txt
+      Re-quantification 0755.finished.txt
+      Re-quantification 0855.finished.txt
+      Re-quantification 0955.finished.txt
+      Re-quantification 1055.finished.txt
+      Re-quantification 1155.finished.txt
+      Re-quantification 1255.finished.txt
+      Re-quantification 1355.finished.txt
+      Re-quantification 1455.finished.txt
+      Re-quantification 1555.finished.txt
+      Re-quantification 1655.finished.txt
+      Re-quantification 1755.finished.txt
+      Re-quantification 1855.finished.txt
+      Re-quantification 1955.finished.txt
+      Re-quantification 2055.finished.txt
+      Re-quantification 2155.finished.txt
+      Re-quantification 2255.finished.txt
+      Re-quantification 2355.finished.txt
+      Re-quantification 2455.finished.txt
+      Re-quantification 2555.finished.txt
+      Re-quantification 2655.finished.txt
+      Re-quantification 2755.finished.txt
+      Re-quantification 2855.finished.txt
+      Re-quantification 2955.finished.txt
+      Re-quantification 3055.finished.txt
+      Re-quantification 3155.finished.txt
+      Re-quantification 3255.finished.txt
+      Re-quantification 3355.finished.txt
+      Re-quantification 3455.finished.txt
+      Re-quantification 3555.finished.txt
+      Re-quantification 3655.finished.txt
+      Re-quantification 3755.finished.txt
+      Re-quantification 3855.finished.txt
+      Re-quantification 3955.finished.txt
+      Re-quantification 4055.finished.txt
+      Re-quantification 4155.finished.txt
+      Re-quantification 4255.finished.txt
+      Re-quantification 4355.finished.txt
+      Re-quantification 4455.finished.txt
+      Re-quantification 4555.finished.txt
+      Re-quantification 4655.finished.txt
+      Re-quantification 4755.finished.txt
+      Re-quantification 4855.finished.txt
+      Re-quantification 4955.finished.txt
+      Re-quantification 5055.finished.txt
+      Re-quantification 5155.finished.txt
+      Re-quantification 5255.finished.txt
+      Re-quantification 5355.finished.txt
+      Re-quantification 5455.finished.txt
+      Re-quantification 5555.finished.txt
+      Read_search_results_for_recalibration 14.finished.txt
+      Read_search_results_for_recalibration 24.finished.txt
+      Read_search_results_for_recalibration 34.finished.txt
+      Read_search_results_for_recalibration 44.finished.txt
+      Reading_search_engine_results 0155.finished.txt
+      Reading_search_engine_results 0255.finished.txt
+      Reading_search_engine_results 0355.finished.txt
+      Reading_search_engine_results 0455.finished.txt
+      Reading_search_engine_results 0555.finished.txt
+      Reading_search_engine_results 0655.finished.txt
+      Reading_search_engine_results 0755.finished.txt
+      Reading_search_engine_results 0855.finished.txt
+      Reading_search_engine_results 0955.finished.txt
+      Reading_search_engine_results 1055.finished.txt
+      Reading_search_engine_results 1155.finished.txt
+      Reading_search_engine_results 1255.finished.txt
+      Reading_search_engine_results 1355.finished.txt
+      Reading_search_engine_results 1455.finished.txt
+      Reading_search_engine_results 1555.finished.txt
+      Reading_search_engine_results 1655.finished.txt
+      Reading_search_engine_results 1755.finished.txt
+      Reading_search_engine_results 1855.finished.txt
+      Reading_search_engine_results 1955.finished.txt
+      Reading_search_engine_results 2055.finished.txt
+      Reading_search_engine_results 2155.finished.txt
+      Reading_search_engine_results 2255.finished.txt
+      Reading_search_engine_results 2355.finished.txt
+      Reading_search_engine_results 2455.finished.txt
+      Reading_search_engine_results 2555.finished.txt
+      Reading_search_engine_results 2655.finished.txt
+      Reading_search_engine_results 2755.finished.txt
+      Reading_search_engine_results 2855.finished.txt
+      Reading_search_engine_results 2955.finished.txt
+      Reading_search_engine_results 3055.finished.txt
+      Reading_search_engine_results 3155.finished.txt
+      Reading_search_engine_results 3255.finished.txt
+      Reading_search_engine_results 3355.finished.txt
+      Reading_search_engine_results 3455.finished.txt
+      Reading_search_engine_results 3555.finished.txt
+      Reading_search_engine_results 3655.finished.txt
+      Reading_search_engine_results 3755.finished.txt
+      Reading_search_engine_results 3855.finished.txt
+      Reading_search_engine_results 3955.finished.txt
+      Reading_search_engine_results 4055.finished.txt
+      Reading_search_engine_results 4155.finished.txt
+      Reading_search_engine_results 4255.finished.txt
+      Reading_search_engine_results 4355.finished.txt
+      Reading_search_engine_results 4455.finished.txt
+      Reading_search_engine_results 4555.finished.txt
+      Reading_search_engine_results 4655.finished.txt
+      Reading_search_engine_results 4755.finished.txt
+      Reading_search_engine_results 4855.finished.txt
+      Reading_search_engine_results 4955.finished.txt
+      Reading_search_engine_results 5055.finished.txt
+      Reading_search_engine_results 5155.finished.txt
+      Reading_search_engine_results 5255.finished.txt
+      Reading_search_engine_results 5355.finished.txt
+      Reading_search_engine_results 5455.finished.txt
+      Reading_search_engine_results 5555.finished.txt
+      Reading_search_engine_results__SP_ 0155.finished.txt
+      Reading_search_engine_results__SP_ 0255.finished.txt
+      Reading_search_engine_results__SP_ 0355.finished.txt
+      Reading_search_engine_results__SP_ 0455.finished.txt
+      Reading_search_engine_results__SP_ 0555.finished.txt
+      Reading_search_engine_results__SP_ 0655.finished.txt
+      Reading_search_engine_results__SP_ 0755.finished.txt
+      Reading_search_engine_results__SP_ 0855.finished.txt
+      Reading_search_engine_results__SP_ 0955.finished.txt
+      Reading_search_engine_results__SP_ 1055.finished.txt
+      Reading_search_engine_results__SP_ 1155.finished.txt
+      Reading_search_engine_results__SP_ 1255.finished.txt
+      Reading_search_engine_results__SP_ 1355.finished.txt
+      Reading_search_engine_results__SP_ 1455.finished.txt
+      Reading_search_engine_results__SP_ 1555.finished.txt
+      Reading_search_engine_results__SP_ 1655.finished.txt
+      Reading_search_engine_results__SP_ 1755.finished.txt
+      Reading_search_engine_results__SP_ 1855.finished.txt
+      Reading_search_engine_results__SP_ 1955.finished.txt
+      Reading_search_engine_results__SP_ 2055.finished.txt
+      Reading_search_engine_results__SP_ 2155.finished.txt
+      Reading_search_engine_results__SP_ 2255.finished.txt
+      Reading_search_engine_results__SP_ 2355.finished.txt
+      Reading_search_engine_results__SP_ 2455.finished.txt
+      Reading_search_engine_results__SP_ 2555.finished.txt
+      Reading_search_engine_results__SP_ 2655.finished.txt
+      Reading_search_engine_results__SP_ 2755.finished.txt
+      Reading_search_engine_results__SP_ 2855.finished.txt
+      Reading_search_engine_results__SP_ 2955.finished.txt
+      Reading_search_engine_results__SP_ 3055.finished.txt
+      Reading_search_engine_results__SP_ 3155.finished.txt
+      Reading_search_engine_results__SP_ 3255.finished.txt
+      Reading_search_engine_results__SP_ 3355.finished.txt
+      Reading_search_engine_results__SP_ 3455.finished.txt
+      Reading_search_engine_results__SP_ 3555.finished.txt
+      Reading_search_engine_results__SP_ 3655.finished.txt
+      Reading_search_engine_results__SP_ 3755.finished.txt
+      Reading_search_engine_results__SP_ 3855.finished.txt
+      Reading_search_engine_results__SP_ 3955.finished.txt
+      Reading_search_engine_results__SP_ 4055.finished.txt
+      Reading_search_engine_results__SP_ 4155.finished.txt
+      Reading_search_engine_results__SP_ 4255.finished.txt
+      Reading_search_engine_results__SP_ 4355.finished.txt
+      Reading_search_engine_results__SP_ 4455.finished.txt
+      Reading_search_engine_results__SP_ 4555.finished.txt
+      Reading_search_engine_results__SP_ 4655.finished.txt
+      Reading_search_engine_results__SP_ 4755.finished.txt
+      Reading_search_engine_results__SP_ 4855.finished.txt
+      Reading_search_engine_results__SP_ 4955.finished.txt
+      Reading_search_engine_results__SP_ 5055.finished.txt
+      Reading_search_engine_results__SP_ 5155.finished.txt
+      Reading_search_engine_results__SP_ 5255.finished.txt
+      Reading_search_engine_results__SP_ 5355.finished.txt
+      Reading_search_engine_results__SP_ 5455.finished.txt
+      Reading_search_engine_results__SP_ 5555.finished.txt
+      Reporter_quantification 0155.finished.txt
+      Reporter_quantification 0255.finished.txt
+      Reporter_quantification 0355.finished.txt
+      Reporter_quantification 0455.finished.txt
+      Reporter_quantification 0555.finished.txt
+      Reporter_quantification 0655.finished.txt
+      Reporter_quantification 0755.finished.txt
+      Reporter_quantification 0855.finished.txt
+      Reporter_quantification 0955.finished.txt
+      Reporter_quantification 1055.finished.txt
+      Reporter_quantification 1155.finished.txt
+      Reporter_quantification 1255.finished.txt
+      Reporter_quantification 1355.finished.txt
+      Reporter_quantification 1455.finished.txt
+      Reporter_quantification 1555.finished.txt
+      Reporter_quantification 1655.finished.txt
+      Reporter_quantification 1755.finished.txt
+      Reporter_quantification 1855.finished.txt
+      Reporter_quantification 1955.finished.txt
+      Reporter_quantification 2055.finished.txt
+      Reporter_quantification 2155.finished.txt
+      Reporter_quantification 2255.finished.txt
+      Reporter_quantification 2355.finished.txt
+      Reporter_quantification 2455.finished.txt
+      Reporter_quantification 2555.finished.txt
+      Reporter_quantification 2655.finished.txt
+      Reporter_quantification 2755.finished.txt
+      Reporter_quantification 2855.finished.txt
+      Reporter_quantification 2955.finished.txt
+      Reporter_quantification 3055.finished.txt
+      Reporter_quantification 3155.finished.txt
+      Reporter_quantification 3255.finished.txt
+      Reporter_quantification 3355.finished.txt
+      Reporter_quantification 3455.finished.txt
+      Reporter_quantification 3555.finished.txt
+      Reporter_quantification 3655.finished.txt
+      Reporter_quantification 3755.finished.txt
+      Reporter_quantification 3855.finished.txt
+      Reporter_quantification 3955.finished.txt
+      Reporter_quantification 4055.finished.txt
+      Reporter_quantification 4155.finished.txt
+      Reporter_quantification 4255.finished.txt
+      Reporter_quantification 4355.finished.txt
+      Reporter_quantification 4455.finished.txt
+      Reporter_quantification 4555.finished.txt
+      Reporter_quantification 4655.finished.txt
+      Reporter_quantification 4755.finished.txt
+      Reporter_quantification 4855.finished.txt
+      Reporter_quantification 4955.finished.txt
+      Reporter_quantification 5055.finished.txt
+      Reporter_quantification 5155.finished.txt
+      Reporter_quantification 5255.finished.txt
+      Reporter_quantification 5355.finished.txt
+      Reporter_quantification 5455.finished.txt
+      Reporter_quantification 5555.finished.txt
+      Second_peptide_search 0155.finished.txt
+      Second_peptide_search 0255.finished.txt
+      Second_peptide_search 0355.finished.txt
+      Second_peptide_search 0455.finished.txt
+      Second_peptide_search 0555.finished.txt
+      Second_peptide_search 0655.finished.txt
+      Second_peptide_search 0755.finished.txt
+      Second_peptide_search 0855.finished.txt
+      Second_peptide_search 0955.finished.txt
+      Second_peptide_search 1055.finished.txt
+      Second_peptide_search 1155.finished.txt
+      Second_peptide_search 1255.finished.txt
+      Second_peptide_search 1355.finished.txt
+      Second_peptide_search 1455.finished.txt
+      Second_peptide_search 1555.finished.txt
+      Second_peptide_search 1655.finished.txt
+      Second_peptide_search 1755.finished.txt
+      Second_peptide_search 1855.finished.txt
+      Second_peptide_search 1955.finished.txt
+      Second_peptide_search 2055.finished.txt
+      Second_peptide_search 2155.finished.txt
+      Second_peptide_search 2255.finished.txt
+      Second_peptide_search 2355.finished.txt
+      Second_peptide_search 2455.finished.txt
+      Second_peptide_search 2555.finished.txt
+      Second_peptide_search 2655.finished.txt
+      Second_peptide_search 2755.finished.txt
+      Second_peptide_search 2855.finished.txt
+      Second_peptide_search 2955.finished.txt
+      Second_peptide_search 3055.finished.txt
+      Second_peptide_search 3155.finished.txt
+      Second_peptide_search 3255.finished.txt
+      Second_peptide_search 3355.finished.txt
+      Second_peptide_search 3455.finished.txt
+      Second_peptide_search 3555.finished.txt
+      Second_peptide_search 3655.finished.txt
+      Second_peptide_search 3755.finished.txt
+      Second_peptide_search 3855.finished.txt
+      Second_peptide_search 3955.finished.txt
+      Second_peptide_search 4055.finished.txt
+      Second_peptide_search 4155.finished.txt
+      Second_peptide_search 4255.finished.txt
+      Second_peptide_search 4355.finished.txt
+      Second_peptide_search 4455.finished.txt
+      Second_peptide_search 4555.finished.txt
+      Second_peptide_search 4655.finished.txt
+      Second_peptide_search 4755.finished.txt
+      Second_peptide_search 4855.finished.txt
+      Second_peptide_search 4955.finished.txt
+      Second_peptide_search 5055.finished.txt
+      Second_peptide_search 5155.finished.txt
+      Second_peptide_search 5255.finished.txt
+      Second_peptide_search 5355.finished.txt
+      Second_peptide_search 5455.finished.txt
+      Second_peptide_search 5555.finished.txt
+      Testing_raw_files 0155.finished.txt
+      Testing_raw_files 0255.finished.txt
+      Testing_raw_files 0355.finished.txt
+      Testing_raw_files 0455.finished.txt
+      Testing_raw_files 0555.finished.txt
+      Testing_raw_files 0655.finished.txt
+      Testing_raw_files 0755.finished.txt
+      Testing_raw_files 0855.finished.txt
+      Testing_raw_files 0955.finished.txt
+      Testing_raw_files 1055.finished.txt
+      Testing_raw_files 1155.finished.txt
+      Testing_raw_files 1255.finished.txt
+      Testing_raw_files 1355.finished.txt
+      Testing_raw_files 1455.finished.txt
+      Testing_raw_files 1555.finished.txt
+      Testing_raw_files 1655.finished.txt
+      Testing_raw_files 1755.finished.txt
+      Testing_raw_files 1855.finished.txt
+      Testing_raw_files 1955.finished.txt
+      Testing_raw_files 2055.finished.txt
+      Testing_raw_files 2155.finished.txt
+      Testing_raw_files 2255.finished.txt
+      Testing_raw_files 2355.finished.txt
+      Testing_raw_files 2455.finished.txt
+      Testing_raw_files 2555.finished.txt
+      Testing_raw_files 2655.finished.txt
+      Testing_raw_files 2755.finished.txt
+      Testing_raw_files 2855.finished.txt
+      Testing_raw_files 2955.finished.txt
+      Testing_raw_files 3055.finished.txt
+      Testing_raw_files 3155.finished.txt
+      Testing_raw_files 3255.finished.txt
+      Testing_raw_files 3355.finished.txt
+      Testing_raw_files 3455.finished.txt
+      Testing_raw_files 3555.finished.txt
+      Testing_raw_files 3655.finished.txt
+      Testing_raw_files 3755.finished.txt
+      Testing_raw_files 3855.finished.txt
+      Testing_raw_files 3955.finished.txt
+      Testing_raw_files 4055.finished.txt
+      Testing_raw_files 4155.finished.txt
+      Testing_raw_files 4255.finished.txt
+      Testing_raw_files 4355.finished.txt
+      Testing_raw_files 4455.finished.txt
+      Testing_raw_files 4555.finished.txt
+      Testing_raw_files 4655.finished.txt
+      Testing_raw_files 4755.finished.txt
+      Testing_raw_files 4855.finished.txt
+      Testing_raw_files 4955.finished.txt
+      Testing_raw_files 5055.finished.txt
+      Testing_raw_files 5155.finished.txt
+      Testing_raw_files 5255.finished.txt
+      Testing_raw_files 5355.finished.txt
+      Testing_raw_files 5455.finished.txt
+      Testing_raw_files 5555.finished.txt
+      Updating_identifications 0155.finished.txt
+      Updating_identifications 0255.finished.txt
+      Updating_identifications 0355.finished.txt
+      Updating_identifications 0455.finished.txt
+      Updating_identifications 0555.finished.txt
+      Updating_identifications 0655.finished.txt
+      Updating_identifications 0755.finished.txt
+      Updating_identifications 0855.finished.txt
+      Updating_identifications 0955.finished.txt
+      Updating_identifications 1055.finished.txt
+      Updating_identifications 1155.finished.txt
+      Updating_identifications 1255.finished.txt
+      Updating_identifications 1355.finished.txt
+      Updating_identifications 1455.finished.txt
+      Updating_identifications 1555.finished.txt
+      Updating_identifications 1655.finished.txt
+      Updating_identifications 1755.finished.txt
+      Updating_identifications 1855.finished.txt
+      Updating_identifications 1955.finished.txt
+      Updating_identifications 2055.finished.txt
+      Updating_identifications 2155.finished.txt
+      Updating_identifications 2255.finished.txt
+      Updating_identifications 2355.finished.txt
+      Updating_identifications 2455.finished.txt
+      Updating_identifications 2555.finished.txt
+      Updating_identifications 2655.finished.txt
+      Updating_identifications 2755.finished.txt
+      Updating_identifications 2855.finished.txt
+      Updating_identifications 2955.finished.txt
+      Updating_identifications 3055.finished.txt
+      Updating_identifications 3155.finished.txt
+      Updating_identifications 3255.finished.txt
+      Updating_identifications 3355.finished.txt
+      Updating_identifications 3455.finished.txt
+      Updating_identifications 3555.finished.txt
+      Updating_identifications 3655.finished.txt
+      Updating_identifications 3755.finished.txt
+      Updating_identifications 3855.finished.txt
+      Updating_identifications 3955.finished.txt
+      Updating_identifications 4055.finished.txt
+      Updating_identifications 4155.finished.txt
+      Updating_identifications 4255.finished.txt
+      Updating_identifications 4355.finished.txt
+      Updating_identifications 4455.finished.txt
+      Updating_identifications 4555.finished.txt
+      Updating_identifications 4655.finished.txt
+      Updating_identifications 4755.finished.txt
+      Updating_identifications 4855.finished.txt
+      Updating_identifications 4955.finished.txt
+      Updating_identifications 5055.finished.txt
+      Updating_identifications 5155.finished.txt
+      Updating_identifications 5255.finished.txt
+      Updating_identifications 5355.finished.txt
+      Updating_identifications 5455.finished.txt
+      Updating_identifications 5555.finished.txt
+      Writing_tables 001293.finished.txt
+      Writing_tables 002293.finished.txt
+      Writing_tables 003293.finished.txt
+      Writing_tables 004293.finished.txt
+      Writing_tables 005293.finished.txt
+      Writing_tables 006293.finished.txt
+      Writing_tables 007293.finished.txt
+      Writing_tables 008293.finished.txt
+      Writing_tables 009293.finished.txt
+      Writing_tables 010293.finished.txt
+      Writing_tables 011293.finished.txt
+      Writing_tables 012293.finished.txt
+      Writing_tables 013293.finished.txt
+      Writing_tables 014293.finished.txt
+      Writing_tables 015293.finished.txt
+      Writing_tables 016293.finished.txt
+      Writing_tables 017293.finished.txt
+      Writing_tables 018293.finished.txt
+      Writing_tables 019293.finished.txt
+      Writing_tables 020293.finished.txt
+      Writing_tables 021293.finished.txt
+      Writing_tables 022293.finished.txt
+      Writing_tables 023293.finished.txt
+      Writing_tables 024293.finished.txt
+      Writing_tables 025293.finished.txt
+      Writing_tables 026293.finished.txt
+      Writing_tables 027293.finished.txt
+      Writing_tables 028293.finished.txt
+      Writing_tables 029293.finished.txt
+      Writing_tables 030293.finished.txt
+      Writing_tables 031293.finished.txt
+      Writing_tables 032293.finished.txt
+      Writing_tables 033293.finished.txt
+      Writing_tables 034293.finished.txt
+      Writing_tables 035293.finished.txt
+      Writing_tables 036293.finished.txt
+      Writing_tables 037293.finished.txt
+      Writing_tables 038293.finished.txt
+      Writing_tables 039293.finished.txt
+      Writing_tables 040293.finished.txt
+      Writing_tables 041293.finished.txt
+      Writing_tables 042293.finished.txt
+      Writing_tables 043293.finished.txt
+      Writing_tables 044293.finished.txt
+      Writing_tables 045293.finished.txt
+      Writing_tables 046293.finished.txt
+      Writing_tables 047293.finished.txt
+      Writing_tables 048293.finished.txt
+      Writing_tables 049293.finished.txt
+      Writing_tables 050293.finished.txt
+      Writing_tables 051293.finished.txt
+      Writing_tables 052293.finished.txt
+      Writing_tables 053293.finished.txt
+      Writing_tables 054293.finished.txt
+      Writing_tables 055293.finished.txt
+      Writing_tables 056293.finished.txt
+      Writing_tables 057293.finished.txt
+      Writing_tables 058293.finished.txt
+      Writing_tables 059293.finished.txt
+      Writing_tables 060293.finished.txt
+      Writing_tables 061293.finished.txt
+      Writing_tables 062293.finished.txt
+      Writing_tables 063293.finished.txt
+      Writing_tables 064293.finished.txt
+      Writing_tables 065293.finished.txt
+      Writing_tables 066293.finished.txt
+      Writing_tables 067293.finished.txt
+      Writing_tables 068293.finished.txt
+      Writing_tables 069293.finished.txt
+      Writing_tables 070293.finished.txt
+      Writing_tables 071293.finished.txt
+      Writing_tables 072293.finished.txt
+      Writing_tables 073293.finished.txt
+      Writing_tables 074293.finished.txt
+      Writing_tables 075293.finished.txt
+      Writing_tables 076293.finished.txt
+      Writing_tables 077293.finished.txt
+      Writing_tables 078293.finished.txt
+      Writing_tables 079293.finished.txt
+      Writing_tables 080293.finished.txt
+      Writing_tables 081293.finished.txt
+      Writing_tables 082293.finished.txt
+      Writing_tables 083293.finished.txt
+      Writing_tables 084293.finished.txt
+      Writing_tables 085293.finished.txt
+      Writing_tables 086293.finished.txt
+      Writing_tables 087293.finished.txt
+      Writing_tables 088293.finished.txt
+      Writing_tables 089293.finished.txt
+      Writing_tables 090293.finished.txt
+      Writing_tables 091293.finished.txt
+      Writing_tables 092293.finished.txt
+      Writing_tables 093293.finished.txt
+      Writing_tables 094293.finished.txt
+      Writing_tables 095293.finished.txt
+      Writing_tables 096293.finished.txt
+      Writing_tables 097293.finished.txt
+      Writing_tables 098293.finished.txt
+      Writing_tables 099293.finished.txt
+      Writing_tables 100293.finished.txt
+      Writing_tables 101293.finished.txt
+      Writing_tables 102293.finished.txt
+      Writing_tables 103293.finished.txt
+      Writing_tables 104293.finished.txt
+      Writing_tables 105293.finished.txt
+      Writing_tables 106293.finished.txt
+      Writing_tables 107293.finished.txt
+      Writing_tables 108293.finished.txt
+      Writing_tables 109293.finished.txt
+      Writing_tables 110293.finished.txt
+      Writing_tables 111293.finished.txt
+      Writing_tables 112293.finished.txt
+      Writing_tables 113293.finished.txt
+      Writing_tables 114293.finished.txt
+      Writing_tables 115293.finished.txt
+      Writing_tables 116293.finished.txt
+      Writing_tables 117293.finished.txt
+      Writing_tables 118293.finished.txt
+      Writing_tables 119293.finished.txt
+      Writing_tables 120293.finished.txt
+      Writing_tables 121293.finished.txt
+      Writing_tables 122293.finished.txt
+      Writing_tables 123293.finished.txt
+      Writing_tables 124293.finished.txt
+      Writing_tables 125293.finished.txt
+      Writing_tables 126293.finished.txt
+      Writing_tables 127293.finished.txt
+      Writing_tables 128293.finished.txt
+      Writing_tables 129293.finished.txt
+      Writing_tables 130293.finished.txt
+      Writing_tables 131293.finished.txt
+      Writing_tables 132293.finished.txt
+      Writing_tables 133293.finished.txt
+      Writing_tables 134293.finished.txt
+      Writing_tables 135293.finished.txt
+      Writing_tables 136293.finished.txt
+      Writing_tables 137293.finished.txt
+      Writing_tables 138293.finished.txt
+      Writing_tables 139293.finished.txt
+      Writing_tables 140293.finished.txt
+      Writing_tables 141293.finished.txt
+      Writing_tables 142293.finished.txt
+      Writing_tables 143293.finished.txt
+      Writing_tables 144293.finished.txt
+      Writing_tables 145293.finished.txt
+      Writing_tables 146293.finished.txt
+      Writing_tables 147293.finished.txt
+      Writing_tables 148293.finished.txt
+      Writing_tables 149293.finished.txt
+      Writing_tables 150293.finished.txt
+      Writing_tables 151293.finished.txt
+      Writing_tables 152293.finished.txt
+      Writing_tables 153293.finished.txt
+      Writing_tables 154293.finished.txt
+      Writing_tables 155293.finished.txt
+      Writing_tables 156293.finished.txt
+      Writing_tables 157293.finished.txt
+      Writing_tables 158293.finished.txt
+      Writing_tables 159293.finished.txt
+      Writing_tables 160293.finished.txt
+      Writing_tables 161293.finished.txt
+      Writing_tables 162293.finished.txt
+      Writing_tables 163293.finished.txt
+      Writing_tables 164293.finished.txt
+      Writing_tables 165293.finished.txt
+      Writing_tables 166293.finished.txt
+      Writing_tables 167293.finished.txt
+      Writing_tables 168293.finished.txt
+      Writing_tables 169293.finished.txt
+      Writing_tables 170293.finished.txt
+      Writing_tables 171293.finished.txt
+      Writing_tables 172293.finished.txt
+      Writing_tables 173293.finished.txt
+      Writing_tables 174293.finished.txt
+      Writing_tables 175293.finished.txt
+      Writing_tables 176293.finished.txt
+      Writing_tables 177293.finished.txt
+      Writing_tables 178293.finished.txt
+      Writing_tables 179293.finished.txt
+      Writing_tables 180293.finished.txt
+      Writing_tables 181293.finished.txt
+      Writing_tables 182293.finished.txt
+      Writing_tables 183293.finished.txt
+      Writing_tables 184293.finished.txt
+      Writing_tables 185293.finished.txt
+      Writing_tables 186293.finished.txt
+      Writing_tables 187293.finished.txt
+      Writing_tables 188293.finished.txt
+      Writing_tables 189293.finished.txt
+      Writing_tables 190293.finished.txt
+      Writing_tables 191293.finished.txt
+      Writing_tables 192293.finished.txt
+      Writing_tables 193293.finished.txt
+      Writing_tables 194293.finished.txt
+      Writing_tables 195293.finished.txt
+      Writing_tables 196293.finished.txt
+      Writing_tables 197293.finished.txt
+      Writing_tables 198293.finished.txt
+      Writing_tables 199293.finished.txt
+      Writing_tables 200293.finished.txt
+      Writing_tables 201293.finished.txt
+      Writing_tables 202293.finished.txt
+      Writing_tables 203293.finished.txt
+      Writing_tables 204293.finished.txt
+      Writing_tables 205293.finished.txt
+      Writing_tables 206293.finished.txt
+      Writing_tables 207293.finished.txt
+      Writing_tables 208293.finished.txt
+      Writing_tables 209293.finished.txt
+      Writing_tables 210293.finished.txt
+      Writing_tables 211293.finished.txt
+      Writing_tables 212293.finished.txt
+      Writing_tables 213293.finished.txt
+      Writing_tables 214293.finished.txt
+      Writing_tables 215293.finished.txt
+      Writing_tables 216293.finished.txt
+      Writing_tables 217293.finished.txt
+      Writing_tables 218293.finished.txt
+      Writing_tables 219293.finished.txt
+      Writing_tables 220293.finished.txt
+      Writing_tables 221293.finished.txt
+      Writing_tables 222293.finished.txt
+      Writing_tables 223293.finished.txt
+      Writing_tables 224293.finished.txt
+      Writing_tables 225293.finished.txt
+      Writing_tables 226293.finished.txt
+      Writing_tables 227293.finished.txt
+      Writing_tables 228293.finished.txt
+      Writing_tables 229293.finished.txt
+      Writing_tables 230293.finished.txt
+      Writing_tables 231293.finished.txt
+      Writing_tables 232293.finished.txt
+      Writing_tables 233293.finished.txt
+      Writing_tables 234293.finished.txt
+      Writing_tables 235293.finished.txt
+      Writing_tables 236293.finished.txt
+      Writing_tables 237293.finished.txt
+      Writing_tables 238293.finished.txt
+      Writing_tables 239293.finished.txt
+      Writing_tables 240293.finished.txt
+      Writing_tables 241293.finished.txt
+      Writing_tables 242293.finished.txt
+      Writing_tables 243293.finished.txt
+      Writing_tables 244293.finished.txt
+      Writing_tables 245293.finished.txt
+      Writing_tables 246293.finished.txt
+      Writing_tables 247293.finished.txt
+      Writing_tables 248293.finished.txt
+      Writing_tables 249293.finished.txt
+      Writing_tables 250293.finished.txt
+      Writing_tables 251293.finished.txt
+      Writing_tables 252293.finished.txt
+      Writing_tables 253293.finished.txt
+      Writing_tables 254293.finished.txt
+      Writing_tables 255293.finished.txt
+      Writing_tables 256293.finished.txt
+      Writing_tables 257293.finished.txt
+      Writing_tables 258293.finished.txt
+      Writing_tables 259293.finished.txt
+      Writing_tables 260293.finished.txt
+      Writing_tables 261293.finished.txt
+      Writing_tables 262293.finished.txt
+      Writing_tables 263293.finished.txt
+      Writing_tables 264293.finished.txt
+      Writing_tables 265293.finished.txt
+      Writing_tables 266293.finished.txt
+      Writing_tables 267293.finished.txt
+      Writing_tables 268293.finished.txt
+      Writing_tables 269293.finished.txt
+      Writing_tables 270293.finished.txt
+      Writing_tables 271293.finished.txt
+      Writing_tables 272293.finished.txt
+      Writing_tables 273293.finished.txt
+      Writing_tables 274293.finished.txt
+      Writing_tables 275293.finished.txt
+      Writing_tables 276293.finished.txt
+      Writing_tables 277293.finished.txt
+      Writing_tables 278293.finished.txt
+      Writing_tables 279293.finished.txt
+      Writing_tables 280293.finished.txt
+      Writing_tables 281293.finished.txt
+      Writing_tables 282293.finished.txt
+      Writing_tables 283293.finished.txt
+      Writing_tables 284293.finished.txt
+      Writing_tables 285293.finished.txt
+      Writing_tables 286293.finished.txt
+      Writing_tables 287293.finished.txt
+      Writing_tables 288293.finished.txt
+      Writing_tables 289293.finished.txt
+      Writing_tables 290293.finished.txt
+      Writing_tables 291293.finished.txt
+      Writing_tables 292293.finished.txt
+      Writing_tables 293293.finished.txt
+
+..........ipynb_checkpoints: -OK-
+.........ASLA-515_22%ACN_20180515: -OK-
+.........ASLA-515_23%ACN_20180515: -OK-
+.........ASLA-515_24%ACN_20180515: -OK-
+.........ASLA-515_25%ACN_20180515: -OK-
+.........ASLA-515_26%ACN_20180515: -OK-
+.........ASLA-515_27%ACN_20180515: -OK-
+.........ASLA-515_28%ACN_20180515: -OK-
+.........ASLA-515_29%ACN_20180515: -OK-
+.........ASLA-515_30%ACN_20180515: -OK-
+.........ASLA-515_35%ACN_20180515: -OK-
+.........ASLA-515_40%ACN_20180515: -OK-
+.........ASLA-515_45%ACN_20180515: -OK-
+.........ASLA-515_50%ACN_20180515: -OK-
+.........ASLA-515_90%ACN_20180515: -OK-
+.........ASLA-603-2_25%ACN_20190214: -OK-
+.........ASLA-603-2_26%ACN_20190214: -OK-
+.........ASLA-603-2_27%ACN_20190214: -OK-
+.........ASLA-603-2_28%ACN_20190214: -OK-
+.........ASLA-603-2_29%ACN_20190214: -OK-
+.........ASLA-603-2_30%ACN_20190214: -OK-
+.........ASLA-603-2_35%ACN_20190214: -OK-
+.........ASLA-603-2_40%ACN_20190214: -OK-
+.........ASLA-603-2_45%ACN_20190214: -OK-
+.........ASLA-603-2_50%ACN_20190214: -OK-
+.........ASLA-603-2_90%ACN_20190214: -OK-
+.........ASLA-626_14%ACN_20181126: -OK-
+.........ASLA-603-2_14%ACN_20190214: -OK-
+.........ASLA-603-2_17%ACN_20190214: -OK-
+.........ASLA-603-2_20%ACN_20190214: -OK-
+.........ASLA-603-2_21%ACN_20190214: -OK-
+.........ASLA-603-2_22%ACN_20190214: -OK-
+.........ASLA-603-2_23%ACN_20190214: -OK-
+.........ASLA-603-2_24%ACN_20190214: -OK-
+.........ASLA-515_14%ACN_20180515: -OK-
+.........ASLA-515_17%ACN_20180515: -OK-
+.........ASLA-515_20%ACN_20180515: -OK-
+.........ASLA-515_21%ACN_20180515: -OK-
+.........ASLA-626_26%ACN_20181126: -OK-
+.........ASLA-626_27%ACN_20181126: -OK-
+.........ASLA-626_28%ACN_20181126: -OK-
+.........ASLA-626_29%ACN_20181126: -OK-
+.........ASLA-626_30%ACN_20181126: -OK-
+.........ASLA-626_35%ACN_20181126: -OK-
+.........ASLA-626_17%ACN_20181126: -OK-
+.........ASLA-626_20%ACN_20181126: -OK-
+.........ASLA-626_21%ACN_20181126: -OK-
+.........ASLA-626_22%ACN_20181126: -OK-
+.........ASLA-626_23%ACN_20181126: -OK-
+.........ASLA-626_24%ACN_20181126: -OK-
+.........ASLA-626_25%ACN_20181126: -OK-
+
+--> /Volumes/PW_Black_4TB/Aslan_platelets/results_files /Volumes/PW_Orange_4TB/Aslan_platelets/results_files
+   right_only:
+      ALSA-platelets_grouped_proteins_TMT.xlsx
+      ASLA-515_peptide_results_8.txt
+      ASLA-603_peptide_results_8.txt
+      ASLA-626_peptide_results_8.txt
+      grouped_peptide_summary_8.txt
+      grouped_peptide_summary_TMT_8.txt
+      grouped_protein_summary_8.txt
+      grouped_protein_summary_TMT_8.txt
+      peptide_summary_8.txt
+      protein_summary_8.txt
+
+..........ipynb_checkpoints: -OK-
+...BERT-618: -OK-
+......BLAST: -OK-
+.........bovine: -OK-
+.........human: -OK-
+......bovine: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......human: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+...BERT-669: -OK-
+......BLAST: -OK-
+.........bovine: -OK-
+.........human: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......raw_files: -OK-
+.........BERT-669_Bovine_B1B2B3Pooled_20190124_OT: -OK-
+.........combined: -OK-
+......results_files: -OK-
+
+--> /Volumes/PW_Black_4TB/BERT-669_BERT-618 /Volumes/PW_Orange_4TB/BERT-669_BERT-618
+   right_only:
+      BERT-618_BERT-669_analysis_results.zip
+      BERT-669_BERT-618.Rproj
+      all_threee_distributions.txt
+      analysis_notes.docx
+      bovine_iBAQ_distributions.txt
+      ks.test.R
+
+.......Rproj.user: -OK-
+.........395D1027: -OK-
+.........shared: -OK-
+......20190218_results: -OK-
+.........BERT-618_BERT-669_analysis_results: -OK-
+.........extra_documentation: -OK-
+......BLAST: -OK-
+......bovine: -OK-
+.........filtered_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......human: -OK-
+.........raw_files: -OK-
+......R-scripts: -OK-
+...bin: -OK-
+......Locale: -OK-
+.........cs_CZ.lproj: -OK-
+.........de_DE.lproj: -OK-
+.........en_US.lproj: -OK-
+.........es_ES.lproj: -OK-
+.........fr_FR.lproj: -OK-
+.........hu_HU.lproj: -OK-
+.........it_IT.lproj: -OK-
+.........ja_JP.lproj: -OK-
+.........ko_KR.lproj: -OK-
+.........nb_NO.lproj: -OK-
+.........nl_NL.lproj: -OK-
+.........pl_PL.lproj: -OK-
+.........pt_BR.lproj: -OK-
+.........ru_RU.lproj: -OK-
+.........sv_SE.lproj: -OK-
+.........tr_TR.lproj: -OK-
+.........zh_CN.lproj: -OK-
+.........zh_TW.lproj: -OK-
+...BIND-473: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/combined /Volumes/PW_Orange_4TB/BIND-473/combined
+   right_only: withn_condition_CVs.pptx
+
+.........filtered_files: -OK-
+.........msn_files: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/combined/results_files /Volumes/PW_Orange_4TB/BIND-473/combined/results_files
+   right_only:
+      BIND-473_Intersection_TMT_pairwise.r
+      BIND-473_TMT_pooled_channels.r
+      BIND-473_labeled-grouped-proteins-TMT-IRS.xlsx
+
+......normalizations: -OK-
+.........Runs_1-4: -OK-
+.........Runs_5-7_first: -OK-
+.........Runs_5-7_second: -OK-
+......TMTExp1: -OK-
+.........2DRPRP: -OK-
+.........Normalization: -OK-
+......TMTExp2: -OK-
+.........2DRPRP: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/TMTExp2/2DRPRP/results_files /Volumes/PW_Orange_4TB/BIND-473/TMTExp2/2DRPRP/results_files
+   right_only:
+      BIND-473_BIND_HumanUrineExosomes_Exp2_pt4_peptide_results_8.txt
+      BIND-473_TMT2_grouped_peptide_summary_TMT_8.txt
+      BIND-473_TMT2_grouped_protein_summary_TMT_8.txt
+
+.........Normalization: -OK-
+......TMTExp3: -OK-
+.........2DRPRP: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/TMTExp3/2DRPRP/results_files /Volumes/PW_Orange_4TB/BIND-473/TMTExp3/2DRPRP/results_files
+   right_only: BIND-473_BIND_HumanUrineExosomes_Exp3_pt5_peptide_results_8.txt
+
+.........Normalization: -OK-
+......TMTExp4: -OK-
+.........2DRPRP: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/TMTExp4/2DRPRP/results_files /Volumes/PW_Orange_4TB/BIND-473/TMTExp4/2DRPRP/results_files
+   right_only:
+      BIND-473_BIND_HumanUrineExosomes_Exp4_pt4_peptide_results_8.txt
+      BIND-473_TMT4_grouped_peptide_summary_TMT_8.txt
+      BIND-473_TMT4_grouped_protein_summary_TMT_8.txt
+
+.........Normalization: -OK-
+......TMTExp5: -OK-
+.........2DRPRP: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/TMTExp5/2DRPRP/results_files /Volumes/PW_Orange_4TB/BIND-473/TMTExp5/2DRPRP/results_files
+   right_only: BIND-473_BIND_HumanUrineExosomes_Exp5_pt5_peptide_results_8.txt
+
+.........Normalization: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/TMTExp6 /Volumes/PW_Orange_4TB/BIND-473/TMTExp6
+   right_only: error-dta-creation-post32pcet.png
+
+.........2DRPRP: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/TMTExp6/2DRPRP/results_files /Volumes/PW_Orange_4TB/BIND-473/TMTExp6/2DRPRP/results_files
+   right_only: BIND-473_BIND_HumanUrineExosomes_Exp6_pt4_peptide_results_8.txt
+
+.........Normalization: -OK-
+......TMTExp7: -OK-
+.........2DRPRP: -OK-
+
+--> /Volumes/PW_Black_4TB/BIND-473/TMTExp7/2DRPRP/results_files /Volumes/PW_Orange_4TB/BIND-473/TMTExp7/2DRPRP/results_files
+   right_only: BIND-473_BIND_HumanUrineExosomes_Exp7_pt6_peptide_results_8.txt
+
+.........Normalization: -OK-
+......various_notebooks: -OK-
+...BujoldTMT: -OK-
+......Fractionated: -OK-
+......General_info: -OK-
+......paws_files: -OK-
+.........msn_files: -OK-
+.........results_files: -OK-
+.........databases: -OK-
+.........filtered_files: -OK-
+......unfractionated: -OK-
+...BURK1617: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......msn_files: -OK-
+......new_PAW_test: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......raw_files: -OK-
+.........bad_files: -OK-
+......results_files: -OK-
+......R_scripts: -OK-
+..........ipynb_checkpoints: -OK-
+......UniProt_2018.01: -OK-
+.........2018.01_UP000002494_Rattus-norvegicus-(Rat): -OK-
+...CALL-638: -OK-
+...Ceci_PRIDE: -OK-
+......OTHER: -OK-
+......QUANT: -OK-
+......SEARCH: -OK-
+......BRAC-128: -OK-
+
+--> /Volumes/PW_Black_4TB/Ceci_PRIDE/BRAC-128/AF /Volumes/PW_Orange_4TB/Ceci_PRIDE/BRAC-128/AF
+   right_only:
+      Exp1
+      Exp2Rerun
+
+.........FU: -OK-
+
+--> /Volumes/PW_Black_4TB/Ceci_PRIDE/CHE-45 /Volumes/PW_Orange_4TB/Ceci_PRIDE/CHE-45
+   right_only:
+      Expt1
+      Expt2
+
+.........Expt1and2Normalization: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......Combined: -OK-
+.........filtered_files: -OK-
+.........results_files: -OK-
+...convert_testing: -OK-
+......fusion: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+......QE: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+......QE_HLA_Pride: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+...Coon_yeast: -OK-
+......singleShot_Fusion-1491770888238: -OK-
+.........Coon yeast: -OK-
+...PAMI-283_PRIDE: -OK-
+......not_for_PRIDE: -OK-
+......OTHER: -OK-
+......QUAN: -OK-
+......RAW: -OK-
+......SEARCH: -OK-
+...Pamir Files for PRIDE - From Deanna: -OK-
+......OTHER: -OK-
+......QUANT: -OK-
+......RAW: -OK-
+......SEARCH: -OK-
+...Phil: -OK-
+......3-day_lens_LCQ: -OK-
+.........dta_files: -OK-
+.........filtered_files: -OK-
+.........MS2_files: -OK-
+.........raw_files: -OK-
+......Bruce_Onisko: -OK-
+.........filtered_files: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......canine_blast: -OK-
+......commands_scripts: -OK-
+.........gzip-1.3.12-1-bin: -OK-
+.........old_scripts: -OK-
+......DAT_files: -OK-
+..........ipynb_checkpoints: -OK-
+......human_lens_blast: -OK-
+......human_saliva_LCQ: -OK-
+.........dta_files: -OK-
+.........MS2_files: -OK-
+.........ncbi_DB: -OK-
+.........raw_files: -OK-
+.........Sprot_DB: -OK-
+......MAN1353_dilutions: -OK-
+.........dilution-series_TMSkip: -OK-
+.........dilutions_2.1: -OK-
+.........raw_files: -OK-
+.........raw_files_and_more: -OK-
+......monkey_blast: -OK-
+......Ortholog_BLAST: -OK-
+.........STEC-251: -OK-
+......peter_blast: -OK-
+...PXD002875_CarbonSources: -OK-
+
+--> /Volumes/PW_Black_4TB/PXD002875_CarbonSources/filtered_files /Volumes/PW_Orange_4TB/PXD002875_CarbonSources/filtered_files
+   right_only: sequest.params
+
+.........ThresholdFigures: -OK-
+......gygi_files: -OK-
+
+--> /Volumes/PW_Black_4TB/PXD002875_CarbonSources/msn_files /Volumes/PW_Orange_4TB/PXD002875_CarbonSources/msn_files
+   right_only:
+      centroided_ms3
+      m02846.ms3
+      m02847.ms3
+      m02848.ms3
+      m02849.ms3
+      m02850.ms3
+      m02851.ms3
+      m02852.ms3
+      m02853.ms3
+      m02854.ms3
+      m02855.ms3
+      m02856.ms3
+      m02857.ms3
+      m02859.ms3
+      m02860.ms3
+      m02861.ms3
+      m02862.ms3
+      m02863.ms3
+      m02864.ms3
+      m02865.ms3
+      m02866.ms3
+      m02867.ms3
+      m02868.ms3
+      m02869.ms3
+      m02870.ms3
+      sequest.params
+
+
+--> /Volumes/PW_Black_4TB/PXD002875_CarbonSources/raw_files /Volumes/PW_Orange_4TB/PXD002875_CarbonSources/raw_files
+   right_only:
+      README.txt
+      centroided
+      m02846_QuantData.txt
+      m02847_QuantData.txt
+      m02848_QuantData.txt
+      m02849_QuantData.txt
+      m02850_QuantData.txt
+      m02851_QuantData.txt
+      m02852_QuantData.txt
+      m02853_QuantData.txt
+      m02854_QuantData.txt
+      m02855_QuantData.txt
+      m02856_QuantData.txt
+      m02857_QuantData.txt
+      m02859_QuantData.txt
+      m02860_QuantData.txt
+      m02861_QuantData.txt
+      m02862_QuantData.txt
+      m02863_QuantData.txt
+      m02864_QuantData.txt
+      m02865_QuantData.txt
+      m02866_QuantData.txt
+      m02867_QuantData.txt
+      m02868_QuantData.txt
+      m02869_QuantData.txt
+      m02870_QuantData.txt
+      raw_list.txt
+
+.........combined: -OK-
+.........m02846: -OK-
+.........m02847: -OK-
+.........m02848: -OK-
+.........m02849: -OK-
+.........m02850: -OK-
+.........m02851: -OK-
+.........m02852: -OK-
+.........m02853: -OK-
+.........m02854: -OK-
+.........m02855: -OK-
+.........m02856: -OK-
+.........m02857: -OK-
+.........m02859: -OK-
+.........m02860: -OK-
+.........m02861: -OK-
+.........m02862: -OK-
+.........m02863: -OK-
+.........m02864: -OK-
+.........m02865: -OK-
+.........m02866: -OK-
+.........m02867: -OK-
+.........m02868: -OK-
+.........m02869: -OK-
+.........m02870: -OK-
+
+--> /Volumes/PW_Black_4TB/PXD002875_CarbonSources/results_files /Volumes/PW_Orange_4TB/PXD002875_CarbonSources/results_files
+   right_only:
+      Untitled.ipynb
+      gly3cs_peptide_results_8.txt
+      grouped_peptide_summary_TMT_8.xlsx
+      ordered_grouped_protein_summary_TMT_8.txt
+
+.........other_log_files: -OK-
+
+--> /Volumes/PW_Black_4TB/PXD002875_CarbonSources/results_files/.ipynb_checkpoints /Volumes/PW_Orange_4TB/PXD002875_CarbonSources/results_files/.ipynb_checkpoints
+   right_only: Untitled-checkpoint.ipynb
+
+..........Rproj.user: -OK-
+
+--> /Volumes/PW_Black_4TB/PXD008009_TripleKNO /Volumes/PW_Orange_4TB/PXD008009_TripleKNO
+   right_only: README.txt
+
+......filtered_files_intensity: -OK-
+.........ThresholdFigures: -OK-
+......filtered_files_SN: -OK-
+.........ThresholdFigures: -OK-
+......gygi_files: -OK-
+......msn_files: -OK-
+.........intensity_txt: -OK-
+......raw_files: -OK-
+.........combined_MS2: -OK-
+
+--> /Volumes/PW_Black_4TB/PXD008009_TripleKNO/raw_files/combined_MS2/txt /Volumes/PW_Orange_4TB/PXD008009_TripleKNO/raw_files/combined_MS2/txt
+   right_only: proteinGroups.xlsx
+
+.........combined_MS3: -OK-
+
+--> /Volumes/PW_Black_4TB/PXD008009_TripleKNO/raw_files/combined_MS3/txt /Volumes/PW_Orange_4TB/PXD008009_TripleKNO/raw_files/combined_MS3/txt
+   right_only: proteinGroups.xlsx
+
+.........L00760: -OK-
+.........L00761: -OK-
+.........L00762: -OK-
+.........L00763: -OK-
+.........L00764: -OK-
+.........L00765: -OK-
+.........m06677: -OK-
+.........m06679: -OK-
+.........m06681: -OK-
+......results_files_intensity: -OK-
+..........ipynb_checkpoints: -OK-
+......results_files_SN: -OK-
+...PXD009019: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......histograms: -OK-
+.........mass_error: -OK-
+......msn_files: -OK-
+......raw_files: -OK-
+......results_files: -OK-
+..........ipynb_checkpoints: -OK-
+......databases: -OK-
+...Reid_Mary_peptidomics: -OK-
+......compare_MQ: -OK-
+.........20141210_QEp7_MiBa_SA_HLA-I-p_MM15_1_A_1: -OK-
+.........combined: -OK-
+.........MQ_results: -OK-
+.........PAW-Comet_results: -OK-
+......filtered_files: -OK-
+.........ThresholdFigures: -OK-
+......literature_etc: -OK-
+......msn_files: -OK-
+..........ipynb_checkpoints: -OK-
+......mutants: -OK-
+..........ipynb_checkpoints: -OK-
+......raw_files: -OK-
+.........bad_files: -OK-
+.........HLA-I_done: -OK-
+.........other: -OK-
+......results_files: -OK-
+......results_files_first: -OK-
+......Search_MQ: -OK-
+......test: -OK-
+......txt_files: -OK-
+...SAL-71: -OK-
+......Cyto_20150618: -OK-
+.........SAL71_cyto_29_30_20150618_OT: -OK-
+.........SAL71_cyto_39_40_20150618_OT: -OK-
+.........SAL71_cyto_41_42_20150618_OT: -OK-
+.........SAL71_cyto_43_44_20150618_OT: -OK-
+.........SAL71_cyto_45_46_20150618_OT: -OK-
+.........SAL71_cyto_47_48_20150618_OT: -OK-
+.........SAL71_cyto_49_50_20150618_OT: -OK-
+.........combined: -OK-
+.........SAL71_cyto_13_14_20150618_OT: -OK-
+.........SAL71_cyto_15_16_20150618_OT: -OK-
+.........SAL71_cyto_17_18_20150618_OT: -OK-
+.........SAL71_cyto_19_20_20150618_OT: -OK-
+.........SAL71_cyto_21_22_20150618_OT: -OK-
+.........SAL71_cyto_23_24_20150618_OT: -OK-
+.........SAL71_cyto_25_26_20150618_OT: -OK-
+.........SAL71_cyto_27_28_20150618_OT: -OK-
+.........SAL71_cyto_31_32_20150618_OT: -OK-
+.........SAL71_cyto_33_34_20150618_OT: -OK-
+.........SAL71_cyto_35_36_20150618_OT: -OK-
+.........SAL71_cyto_37_38_20150618_OT: -OK-
+......Mito_20150613: -OK-
+...scratch: -OK-
+......Comet_testing: -OK-
+.........BUR1617: -OK-
+.........DAVI-429: -OK-
+......JPR_201712: -OK-
+.........filtered_files: -OK-
+.........MS2: -OK-
+.........MS3: -OK-
+
+--> /Volumes/PW_Black_4TB/scratch/JPR_201712/MS3/raw_files /Volumes/PW_Orange_4TB/scratch/JPR_201712/MS3/raw_files
+   right_only:
+      151107_Ecoli_12prot_spike_MS3_Fr1.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr10.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr11.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr12.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr2.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr3.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr3r.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr4.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr5.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr6.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr7.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr8.PAW_tmt.txt
+      151107_Ecoli_12prot_spike_MS3_Fr9.PAW_tmt.txt
+
+.........results_files: -OK-
+.........serum: -OK-
+
+--> /Volumes/PW_Black_4TB/scratch/JPR_201712/serum/results_files_semi /Volumes/PW_Orange_4TB/scratch/JPR_201712/serum/results_files_semi
+   right_only:
+      Nat-Comm-2019_TMT_QE_averages.ipynb
+      labeled_grouped_protein_summary_TMT_9_IRS_normalized.txt
+
+......mouse_lens: -OK-
+.........filtered_files: -OK-
+.........MQ_analysis: -OK-
+.........msn_files: -OK-
+.........raw_files: -OK-
+.........results_files: -OK-
+......protein_inference: -OK-
+.........filtered_files: -OK-
+.........filtered_files_A: -OK-
+.........msn_files: -OK-
+.........proteoform-standard-master: -OK-
+.........raw_files: -OK-
+.........results_files_1: -OK-
+.........results_files_3: -OK-
+.........results_files_9: -OK-
+.........results_files_A: -OK-
+.........study_package: -OK-
+...ShowLing_2017: -OK-
+......BLAST: -OK-
+......Exp1: -OK-
+.........old_less_grouping: -OK-
+......Exp2: -OK-
+......Exp3: -OK-
+......Exp4: -OK-
+......John_sheets: -OK-
+......original_analysis: -OK-
+.........Exp1: -OK-
+.........Exp2: -OK-
+.........Exp3: -OK-
+.........Exp4: -OK-
+......ortholog_sites: -OK-
+......UniProt_2017.07: -OK-
+.........2017.07_UP000002494_Rattus-norvegicus-(Rat): -OK-
+...ShowLing_PRIDE: -OK-
+...Sushil_Box_Proteomics_dataset: -OK-
+.......ipynb_checkpoints: -OK-
+......Proteomics_2016: -OK-
+.........MQ_TXT_files: -OK-
+......Proteomics_datasets: -OK-
+......SILAC_20190413: -OK-
+..........ipynb_checkpoints: -OK-
+......Sushil: -OK-
+.........COS1383_M1_lysate: -OK-
+.........COS1383_M2_lysate: -OK-
+.........COS1537_M1_CM: -OK-
+.........COS1537_M2_CM: -OK-
+.........COS1537_MC_CM: -OK-
+.........mgf_files: -OK-
+......Sushil_final: -OK-
+.........log2_distributions: -OK-
+.........other_analyses: -OK-
+.........single_exp_correlations: -OK-
+.........txt: -OK-
+.........Z-scores_better_norm: -OK-
+......Sushil_TMSkip: -OK-
+.........edgeR_analysis: -OK-
+.........Fisher_combined: -OK-
+.........log2_distributions: -OK-
+.........single_exp_correlations: -OK-
+.........txt: -OK-
+.........z-scores: -OK-
+.........Z-scores_better_norm: -OK-
+...System Volume Information: -OK-
+
+--> /Volumes/PW_Black_4TB/System Volume Information/Chkdsk /Volumes/PW_Orange_4TB/System Volume Information/Chkdsk
+   right_only:
+      Chkdsk20180614101523.log
+      Chkdsk20190525180452.log
+
+...VATA-637: -OK-
+.......ipynb_checkpoints: -OK-
+...WD_black_pre-installed: -OK-
+......WD Discovery: -OK-
+.........Contents: -OK-
+.........locales: -OK-
+.........Packages: -OK-
+.........resources: -OK-
+......WD Software Offline Installers: -OK-
+.........For Mac: -OK-
+.........For Windows: -OK-
+...yeast_databases: -OK-
+
+
+=================================================================
+  compare_directories.py, v1.4, Phil Wilmarth, OHSU, 2012, 2017  
+=================================================================
+   Ran on: Wed Jul 31 13:37:34 2019
+
+File attributes only will be checked.
+Comparing: /Volumes/PW_Orange_4TB/MORG-339/RAW
+       To: /Volumes/PW_Orange_4TB/MORG-339/raw_files 
+
+
+--> /Volumes/PW_Orange_4TB/MORG-339/RAW /Volumes/PW_Orange_4TB/MORG-339/raw_files
+   left_only:
+      MORG-339_phosphopeptide_TMT_10%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_12%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_14%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_16%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_18%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_20%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_22%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_25%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_30%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_4%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_6%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_60%ACN_032017_OT.txt.gz
+      MORG-339_phosphopeptide_TMT_8%ACN_032017_OT.txt.gz
+   right_only:
+      MORG-339_TMT_90%ACN_032117_OT.msf.gz
+      MORG-339_TMT_90%ACN_032117_OT_proteingroups.txt.gz
+      MORG-339_TMT_90%ACN_032117_OT_proteins_1.5.txt
+      MORG-339_TMT_90%ACN_032117_OT_psms.txt.gz
+      MORG-339_TMT_90%ACN_032117_OT_psms_1.5.txt.gz
+      MORG-339_TMT_90%ACN_032117_OT_rawdump.txt.gz
+      MORG-339_phosphopeptide_TMT_8%ACN_032017_OT.msf.gz
+      MORG-339_phosphopeptide_TMT_8%ACN_032017_OT_proteingroups.txt
+      MORG-339_phosphopeptide_TMT_8%ACN_032017_OT_psm_filtered_all.txt.gz
+      MORG-339_phosphopeptide_TMT_8%ACN_032017_OT_psm_filtered_combined.txt
+      MORG-339_phosphopeptide_TMT_8%ACN_032017_OT_psms.txt.gz
+
+
+
+=================================================================
+  compare_directories.py, v1.4, Phil Wilmarth, OHSU, 2012, 2017  
+=================================================================
+   Ran on: Wed Jul 31 16:13:35 2019
+
+File attributes only will be checked.
+Comparing: /Volumes/PW_Black_4TB/MORG-339/RAW
+       To: /Volumes/PW_Orange_4TB/MORG-339/RAW 
+
+RAW: -OK-
