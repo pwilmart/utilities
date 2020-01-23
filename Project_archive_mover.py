@@ -25,9 +25,9 @@ import time
 import re
 import win32api
 
-from Tkinter import *
-import tkMessageBox
-import tkFileDialog
+from tkinter import *
+from tkinter import filedialog
+##from tkinter import messagebox    # not used?
 
 # Set paths for each computer HERE:
 # these are the important data structures with volume names (not letters which change), and folder names.
@@ -44,19 +44,6 @@ FOLDER_NAMES = {'psrcore-mrba608': ('PSR_Core_Analysis', 'from_608'),
 
 ARCHIVE_NAME = 'zzz_TO_ARCHIVE'
 
-### NOTE: These types of tuples are now computed since drive letters are not always constant
-### (source, destination) folder names for each computer (put in typical pocket drive letters)
-##COMPUTERS = {'analysis_5': (r'D:\PSR_Core_analysis', r'G:\from_4'),
-##             'newdatapc': (r'D:\Temp_Data_Analysis', r'H:\from_3'),
-##             'analysis_4': (r'D:\PSR_Core_analysis', r'G:\from_2'),
-##             'analysis_6': (r'D:\PSR_Core_analysis', r'H:\from_1'),
-##             'psrcore-mrba608': (r'F:\PSR_Core_Analysis', r'G:\from_608'),
-##             'psrcore-mrba610': (r'F:\PSR_Core_Analysis', r'G:\from_610'),
-##             'psrcore-mrba611': (r'F:\PSR_Core_Analysis', r'E:\from_611'),
-##             'psr_core-690': (r'Q:', r'K:\Projects_20141224-present')}
-
-##ARCHIVE_BACKUP = r'H:\Projects_20141224-present'   # location of RAID volume backup (computed now)
-
 def no_hidden(files):
     """Removes files that start with periods.
     """
@@ -66,11 +53,11 @@ def print_error(log_file_list, error, left_path, right_path):
     """Prints any errors being trapped.
     """
     for obj in log_file_list:
-        print >>obj, 80*"="
-        print >>obj, 'WARNING:', left_path
-        print >>obj, '...', right_path
-        print >>obj, error
-        print >>obj, 80*"="
+        print(80*"=", file=obj)
+        print('WARNING:', left_path, file=obj)
+        print('...', right_path, file=obj)
+        print(error, file=obj)
+        print(80*"=", file=obj)
 
 def compare_directories(left, right, write, CHECK_CONTENTS=True):
     """Compares two folders for identical contents.
@@ -98,8 +85,8 @@ def compare_directories(left, right, write, CHECK_CONTENTS=True):
                 (match, mismatch, errors) = filecmp.cmpfiles(left_path, right_path,
                                                              common_files, shallow=False)
             # Return Flase if any differences, else True
-            if left_only or right_only or common_funny or diff_files \
-               or funny_files or mismatch or errors:
+            if (left_only or right_only or common_funny or
+                diff_files or funny_files or mismatch or errors):
                 return False
             else:
                 return True
@@ -112,16 +99,16 @@ def compare_directories(left, right, write, CHECK_CONTENTS=True):
 
         return False
     
-def calc_md5_hash(file_path):
+def calc_sha1_hash(file_path):
     """Taken from: http://stackoverflow.com/questions/18538201/python-script-throws-memory-error
     Calculates hashes on large files.
     """
-    md5hash = hashlib.md5()
+    sha1_hash = hashlib.sha1()
     with open(file_path, 'rb') as file_to_check:
         for chunk in iter(lambda: file_to_check.read(4096), ''):
-            md5hash.update(chunk)
+            sha1_hash.update(chunk)
 
-    return md5hash.hexdigest()
+    return sha1_hash.hexdigest()
 
 def find_duplicates(root, write):
     """Finds duplicate files in a root directory. Returns folders containing duplicates.
@@ -138,7 +125,7 @@ def find_duplicates(root, write):
     """
     if not os.path.exists(root):
         for obj in write:
-            print >>obj, '...WARNING: folder not found!'
+            print('...WARNING: folder not found!', file=obj)
         return
     
     # Makes a dictionary of list of files of identical size, file size is the key
@@ -159,7 +146,7 @@ def find_duplicates(root, write):
             if os.path.basename(fpath).upper() == 'SEQUEST.PARAMS':
                 continue
             # Add to dictionary of files with the same hashes
-            hashed_files.setdefault(calc_md5_hash(fpath), []).append(fpath)
+            hashed_files.setdefault(calc_sha1_hash(fpath), []).append(fpath)
     # Remove any single entry lists - MD5 hash is unique so it is not a duplicate file
     hashed_files = [x for x in hashed_files.values() if len(x) > 1]
 
@@ -189,23 +176,24 @@ def find_duplicates(root, write):
         write.append(dup_log_obj)
 
     for obj in write:
-        print >>obj, '+..Duplicate checking in:', root
+        print('+..Duplicate checking in:', root, file=obj)
     dup_tot_size = 0
     orig_tot_size = 0
     for duplicate_list in duplicate_files:
         if duplicate_list[0].lower().endswith('.apar'):     # skip MaxQuant apar files
             continue
         for obj in write:
-            print >>obj, '+.....%s has duplicates:' % (os.path.basename(duplicate_list[0]),)
+            print('+.....%s has duplicates:' % (os.path.basename(duplicate_list[0]),), file=obj)
         orig_tot_size += os.stat(duplicate_list[0]).st_size
         for duplicate in duplicate_list:
             for obj in write:
-                print >>obj, '+........%s' % (duplicate.replace(root, '~'),)
+                print('+........%s' % (duplicate.replace(root, '~'),), file=obj)
             dup_tot_size += os.stat(duplicate).st_size
 
     if duplicate_files:
         for obj in write:
-            print >>obj, '  [%0.2f MB wasted in duplicates]' % ((dup_tot_size - orig_tot_size)/1024.0/1024.0,)
+            print('  [%0.2f MB wasted in duplicates]' %
+                  ((dup_tot_size - orig_tot_size)/1024.0/1024.0,), file=obj)
         write.remove(dup_log_obj)
         dup_log_obj.close()
             
@@ -220,8 +208,7 @@ def get_folder(default, message='Select a Directory'):
     """
     root = Tk()
     root.withdraw()
-    folder_path = tkFileDialog.askdirectory(parent=root,initialdir=default,\
-                                       title=message)
+    folder_path = filedialog.askdirectory(parent=root,initialdir=default, title=message)
     return(folder_path)
 
 def check_path_lengths(source, destination, write):
@@ -232,11 +219,11 @@ def check_path_lengths(source, destination, write):
 
     written by Phil Wilmarth, OHSU, 2013.
     """
-    print '\n#################################'
-    print 'inside path length checker module'
-    print 'source:', source
-    print 'destination:', destination
-    print 'path length difference:', (len(destination)-len(source))
+    print('\n#################################')
+    print('inside path length checker module')
+    print('source:', source)
+    print('destination:', destination)
+    print('path length difference:', (len(destination)-len(source)))
     exceed_max = False
     longest = 0
     new_diff = len(destination) - len(source)
@@ -245,15 +232,15 @@ def check_path_lengths(source, destination, write):
             if (len(os.path.join(path, f)) + new_diff) > longest:
                 longest = len(os.path.join(path, f)) + new_diff
                 if longest >= 259:
-                    print '...filename will be too long', longest
+                    print('...filename will be too long', longest)
                     exceed_max = True
                     for obj in write:
-                        print >>obj, '\n', 50*'#'
-                        print >>obj, '...WARNING: file path will exceed maximum after move'
-                        print >>obj, '......', os.path.join(path, f).lstrip(source)
-                        print >>obj, 50*'#', '\n'
+                        print('\n', 50*'#', file=obj)
+                        print('...WARNING: file path will exceed maximum after move', file=obj)
+                        print('......', os.path.join(path, f).lstrip(source), file=obj)
+                        print(50*'#', '\n', file=obj)
                         break
-    print 'longest path was:', longest
+    print('longest path was:', longest)
     return exceed_max    
 
 def get_folder_size(folder):
@@ -304,7 +291,7 @@ def copy_project_folder(from_project, to_project, write, success_list, move=Fals
     if os.path.exists(to_project):                              
         if compare_directories(from_project, to_project, write):
             for obj in write:
-                print >>obj, '...WARNING:', os.path.basename(from_project), 'has already been archived.\n'
+                print('...WARNING:', os.path.basename(from_project), 'has already been archived.\n', file=obj)
             success_list.append(os.path.basename(from_project))
             return
         else:
@@ -314,8 +301,8 @@ def copy_project_folder(from_project, to_project, write, success_list, move=Fals
     do_not_copy = check_path_lengths(from_project, to_project, write)
     if do_not_copy:
         for obj in write:
-            print >>obj, '...WARNING: %s was NOT copied' % os.path.basename(from_project)
-            print >>obj, '......Some file path names are too long! Manually fix then manually archive.\n'
+            print('...WARNING: %s was NOT copied' % os.path.basename(from_project), file=obj)
+            print('......Some file path names are too long! Manually fix then manually archive.\n', file=obj)
         reply = raw_input('>>> Continue with moving (y or n)? ')
         if reply.lower().startswith('n'):
             sys.exit(0)
@@ -328,8 +315,8 @@ def copy_project_folder(from_project, to_project, write, success_list, move=Fals
         i = 0
         while (not compare_directories(from_project, to_project, write)) and (i < TRY_COUNT):
             for obj in write:
-                print >>obj, '...WARNING: file copy did not occur successfully... retrying...'
-                print >>obj, '......(Try %i of %i )' % (i, TRY_COUNT)
+                print('...WARNING: file copy did not occur successfully... retrying...', file=obj)
+                print('......(Try %i of %i )' % (i, TRY_COUNT), file=obj)
             shutil.rmtree(to_project)
             time.sleep(5)
             shutil.copytree(from_project, to_project)
@@ -337,37 +324,35 @@ def copy_project_folder(from_project, to_project, write, success_list, move=Fals
 
         if i > 2:
             for obj in write:
-                print >>obj, '...WARNING: Unable to copy folder ' + from_project
-                print >>obj, '...Exiting!'
+                print('...WARNING: Unable to copy folder ' + from_project, file=obj)
+                print('...Exiting!', file=obj)
             sys.exit(0)
         else:
             if move:
                 shutil.rmtree(from_project)
                 for obj in write:
-                    print >>obj, '...%s moved to:\n......%s' % (from_project, to_project)
+                    print('...%s moved to:\n......%s' % (from_project, to_project), file=obj)
             else:
                 for obj in write:
-                    print >>obj, '...%s copied to:\n......%s' % (from_project, to_project)
+                    print('...%s copied to:\n......%s' % (from_project, to_project), file=obj)
                 success_list.append(os.path.basename(from_project))
 
     return                             
 
 
 def copy_all_project_folders(from_folder, to_folder, write):
-    '''
-
-    Copies all project folders in from_folder to to_folder.
+    """Copies all project folders in from_folder to to_folder.
  
     Billy Rathje, OHSU, 2013
-    '''
+    """
     project_list = [x for x in os.listdir(from_folder) if os.path.isdir(os.path.join(from_folder, x))]
 
     if project_list:
         for obj in write:
-            print >>obj, '...Moving these projects in %s:' % from_folder
+            print('...Moving these projects in %s:' % from_folder, file=obj)
             for p in project_list:
-                print >>obj, '......%s' % p
-            print >>obj, '...To: %s' % to_folder
+                print('......%s' % p, file=obj)
+            print('...To: %s' % to_folder, file=obj)
         
     dummy = []
     for project in project_list:
@@ -385,7 +370,7 @@ def clean_out_previous_projects(folder, log_file_path, write, mode):
         with open(os.path.join(log_file_path, 'Archive_mover_success.log')) as infile:
             contents = infile.readlines()
     except IOError:
-        print '...WARNING: Archive_mover_success.log not found'
+        print('...WARNING: Archive_mover_success.log not found')
         return  # no file present so nothing to do
 
     # skip to the last set of project names
@@ -406,7 +391,7 @@ def clean_out_previous_projects(folder, log_file_path, write, mode):
 
     if project_list:
         for obj in write:
-            print >>obj, '\n...Cleaning up:', folder
+            print('\n...Cleaning up:', folder, file=obj)
 
         # delete any that are in the success list
         del_count = 0
@@ -415,7 +400,7 @@ def clean_out_previous_projects(folder, log_file_path, write, mode):
                 shutil.rmtree(os.path.join(folder, project))
                 del_count += 1
                 for obj in write:
-                    print >>obj, '......deleting:', project
+                    print('......deleting:', project, file=obj)
 
         # update success log file when original projects are deleted from analysis computers
         if mode == 'TO_POCKET_DRIVE' and del_count > 0:
@@ -428,12 +413,10 @@ def clean_out_previous_projects(folder, log_file_path, write, mode):
     return
 
 def get_basenames(project_name):
-    """Splits on common separators and
- returns a list of project codes.
+    """Splits on common separators and returns a list of project codes.
     The lists can have zero, one, or more than one project code.
 
     written by Phil Wilmarth, OHSU, 2013.                              
-
     """
     # split on common separators (any non letter/number)
     items = re.split(r'[^a-zA-Z0-9\-]', project_name)   # iLab uses "dash" in project codes (no longer splits on those)
@@ -466,8 +449,8 @@ def create_container_folder(existing_path, write):
             i += 1
         else:
             break
-    print 'old name:', existing_path
-    print 'new name:', new_existing_path
+    print('old name:', existing_path)
+    print('new name:', new_existing_path)
     os.rename(existing_path, new_existing_path)
 
     # create container folder
@@ -485,10 +468,10 @@ def create_container_folder(existing_path, write):
     copy_project_folder(new_existing_path, os.path.join(container, new_existing),
                         write, dummy, move=True)                    
     for obj in write:
-        print >>obj, '...WARNING: creating new base project folder to avoid conflicts'
-        print >>obj, '......%s renamed to %s' % (os.path.basename(existing_path), new_existing)
-        print >>obj, '......%s moved to %s' % (os.path.basename(existing_path),
-                                               os.path.join(existing_basename, new_existing))
+        print('...WARNING: creating new base project folder to avoid conflicts', file=obj)
+        print('......%s renamed to %s' % (os.path.basename(existing_path), new_existing), file=obj)
+        print('......%s moved to %s' % (os.path.basename(existing_path),
+                                        os.path.join(existing_basename, new_existing)), file=obj)
 
     return container
                                                               
@@ -534,10 +517,10 @@ def copy_projects_with_conflict_check(from_here, to_here, write, logfileflag=Tru
             for existing in existing_projects:
                 if project == existing: 
                     existing_path = os.path.join(to_here, existing)
-                    print '\nConflict with full name:', existing
+                    print('\nConflict with full name:', existing)
                     match += 1
             if match > 1:
-                print 'WARNING: project matched multiple:', project
+                print('WARNING: project matched multiple:', project)
                 
             # next look for basename conflicts
             if not existing_path:
@@ -547,14 +530,15 @@ def copy_projects_with_conflict_check(from_here, to_here, write, logfileflag=Tru
                         basename = get_basenames(existing)[0]
                     else: # need to trap when there is not a single basename
                         basename = None
-                        print 'existing:', existing
-                        print 'basenames:', get_basenames(existing)
+                        print('existing:', existing)
+                        print('basenames:', get_basenames(existing))
                     if incoming == basename:
                         existing_path = os.path.join(to_here, existing)
-                        print '\nConflict with basename:', existing
+                        print('\nConflict with basename:', existing)
                         match += 1
                 if match > 1:
-                    print 'WARNING: incoming matched multiple:', incoming
+                    print('WARNING: incoming matched multiple:', incoming)
+                    print('DOUBLE WARNING: this case is not being handled!!!')
                     """
                     Need to add some logic here to deal with this case
                     """
@@ -587,7 +571,7 @@ def copy_projects_with_conflict_check(from_here, to_here, write, logfileflag=Tru
             # do not copy if duplicate, warn user
             if duplicate:                
                 for obj in write:
-                    print >>obj, '...WARNING:', project, 'has already been archived'
+                    print('...WARNING:', project, 'has already been archived', file=obj)
                 success_list.append(project)
 
             # OK to copy incoming with time stamp to container folder and then check for duplicates                
@@ -669,18 +653,18 @@ def main():
 
     # get source location and test if OK
     from_folder = os.path.join(drive_map[VOLUME_NAMES[computer_name][0]], FOLDER_NAMES[computer_name][0])
-    print 'from_folder:', from_folder
+    print('from_folder:', from_folder)
     from_folder = get_folder(from_folder, 'Please select main folder to process')
     if not from_folder: sys.exit(1)    # cancel response
     if computer_name != 'psr_core-690':
         from_folder = os.path.join(from_folder, ARCHIVE_NAME)
         if not os.path.exists(from_folder):
-            print 'ERROR:', from_folder, 'does not exist!'
+            print('ERROR:', from_folder, 'does not exist!')
             sys.exit(1)
 
     # get destination location and test if OK
     to_folder = os.path.join(drive_map[VOLUME_NAMES[computer_name][1]], FOLDER_NAMES[computer_name][1])
-    print 'to_folder:', to_folder
+    print('to_folder:', to_folder)
     if not os.path.exists(to_folder):
         to_folder = get_folder(os.getcwd(), 'Please select location to copy files to')
     if not to_folder: sys.exit(1)    # cancel response
@@ -697,17 +681,17 @@ def main():
     if MODE == 'FROM_POCKET_DRIVE':        
         # make sure backup volume is ready
         ARCHIVE_BACKUP = os.path.join(drive_map[VOLUME_NAMES[computer_name][2]], FOLDER_NAMES[computer_name][2])
-        print 'backup_folder:', ARCHIVE_BACKUP
+        print('backup_folder:', ARCHIVE_BACKUP)
         if not os.path.exists(ARCHIVE_BACKUP):
-            print ARCHIVE_BACKUP, 'does not exist'
+            print(ARCHIVE_BACKUP, 'does not exist')
             ARCHIVE_BACKUP = get_folder(os.getcwd(), 'Please select RAID backup folder')
         if not ARCHIVE_BACKUP: sys.exit(1)
 
     for obj in write:
-        print >>obj, '\n================================================================='
-        print >>obj, ' Archive mover utility v1.0, written by Billy Rathje, OHSU, 2013 '
-        print >>obj, '================================================================='
-        print >>obj, 'Ran on:', str(time.ctime())
+        print('\n=================================================================', file=obj)
+        print(' Archive mover utility v1.0, written by Billy Rathje, OHSU, 2013 ', file=obj)
+        print('=================================================================', file=obj)
+        print('Ran on:', str(time.ctime()), file=obj)
 
     if MODE == 'TO_POCKET_DRIVE':
         # remove any successfully transferred projects from previous run
@@ -719,8 +703,9 @@ def main():
             copy_all_project_folders(from_folder, to_folder, write)
         else:
             for obj in write:
-                print >>obj, 'Not enough space on destination volume to copy projects. Aborting.'
-                print >>obj, 'Projects are %i MB, destination volume has %i MB free.' % (get_folder_size(from_folder),get_volume_free_space(to_folder))
+                print('Not enough space on destination volume to copy projects. Aborting.', file=obj)
+                print('Projects are %i MB, destination volume has %i MB free.' %
+                      (get_folder_size(from_folder),get_volume_free_space(to_folder)), file=obj)
 
     if MODE == 'FROM_POCKET_DRIVE':        
         # List of folders on pocket drive (should be four - one per computer)
@@ -740,7 +725,7 @@ def main():
             # Copy files from all folders on pocket drive to RAID location
             for folder in folders_on_pocket_drive:
                 for obj in write:
-                    print >>obj, '\nProcessing:', folder
+                    print('\nProcessing:', folder, file=obj)
                 
                 # copy to RAID volume
                 copy_projects_with_conflict_check(folder, to_folder, write)        
@@ -753,8 +738,9 @@ def main():
         
         else:
             for obj in write:
-                print >>obj, 'Not enough space on destination volume to copy projects. Aborting.'
-                print >>obj, 'Pocket drive has %i MB of data, dest. volume has %i MB free.' % (size, get_volume_free_space(to_folder))
+                print('Not enough space on destination volume to copy projects. Aborting.', file=obj)
+                print('Pocket drive has %i MB of data, dest. volume has %i MB free.' %
+                      (size, get_volume_free_space(to_folder)), file=obj)
     try:
         log_obj.close()
     except:

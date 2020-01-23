@@ -709,7 +709,10 @@ def reconcile_zip_locations(info_list, path_to_project, write):
     # remove any empty Zip folders
     for folder in zip_locations_to_remove:
         if not os.listdir(folder):
-            os.remove(folder)
+            try:
+                os.remove(folder)
+            except PermissionError:
+                print('......WARNING: could not delete:', folder)
 
     return
         

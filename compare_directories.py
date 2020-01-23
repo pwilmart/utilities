@@ -13,8 +13,8 @@ import tkinter
 from tkinter import filedialog
 
 LEVELS = 3              # how many subfolder levels for printing
-CHECK_CONTENTS = False   # checks actual contents of files
-VERBOSE = True          # if True, prints "no difference" folders
+CHECK_CONTENTS = True   # checks actual contents of files
+VERBOSE = False         # if True, prints "no difference" folders
 
 def strip(s):
     """Strips non-Ascii characters from strings."""
@@ -116,6 +116,9 @@ for (dirpath, subdirs, files) in os.walk(left):
         right_only = no_hidden(dc.right_only)
         common_funny = no_hidden(dc.common_funny)
         diff_files = no_hidden(dc.diff_files)
+        #######################################
+        diff_files = [x for x in diff_files if x != "gzipped_files.log"]
+        ########################################        
         funny_files = no_hidden(dc.funny_files)
 
         # check common files for identity
